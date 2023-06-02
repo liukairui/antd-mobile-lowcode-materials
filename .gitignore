@@ -1,0 +1,8 @@
+.DS_Store
+/.tmp
+/build
+/dist
+/es
+/lib
+/node_modules
+/site

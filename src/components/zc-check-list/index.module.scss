@@ -1,0 +1,22 @@
+.popupBody {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+}
+
+.navBar {
+  --border-bottom: 1px solid var(--adm-color-border);
+  flex-shrink: 0;
+
+  .closeIcon {
+    color: var(--adm-color-weak);
+    font-size: 14px;
+  }
+}
+
+.checkList {
+  --border-top: unset;
+  --border-bottom: unset;
+  flex: 1;
+  overflow-y: auto;
+}

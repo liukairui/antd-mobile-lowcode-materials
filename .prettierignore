@@ -1,0 +1,12 @@
+node_modules/
+lib/
+build/
+dist/
+umd/
+es/
+.cachefile/
+deps.json
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+miniapp/**/*.axml
