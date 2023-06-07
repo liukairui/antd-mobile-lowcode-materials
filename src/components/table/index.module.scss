@@ -1,0 +1,13 @@
+.table {
+  table,
+  td,
+  th {
+    border: 1px solid var(--adm-color-border);
+    border-collapse: collapse;
+    font-size: var(--adm-font-size-8);
+  }
+
+  th {
+    background: var(--adm-color-light);
+  }
+}

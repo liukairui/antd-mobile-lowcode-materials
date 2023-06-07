@@ -13,6 +13,7 @@ interface ZcCheckListItem {
 
 interface ZcCheckListProps {
   items: ZcCheckListItem[];
+  readOnly: boolean;
 }
 
 const ZcCheckList: FC<ZcFieldProps & ZcCheckListProps> = (props) => {

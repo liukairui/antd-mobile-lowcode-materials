@@ -103,6 +103,9 @@ export { WaterMark } from 'antd-mobile';
 /* 页脚 */
 export { Footer } from 'antd-mobile';
 
+/* 表格 */
+export { Table } from './components/table';
+
 /* ==================== 信息录入 ==================== */
 
 /* 级联选择 */

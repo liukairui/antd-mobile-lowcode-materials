@@ -116,7 +116,7 @@ const CheckboxMeta: IPublicTypeComponentMetadata = {
           label: {
             type: 'i18n',
             'en-US': 'id',
-            'zh-CN': 'ID 标识'
+            'zh-CN': 'ID'
           },
           tip: {
             type: 'i18n',
