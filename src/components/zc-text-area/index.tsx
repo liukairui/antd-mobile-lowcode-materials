@@ -1,7 +1,6 @@
-import { FormItemProps, TextAreaProps } from 'antd-mobile';
+import { Form, FormItemProps, TextArea, TextAreaProps } from 'antd-mobile';
 import { FC, createElement } from 'react';
 import { ZcFieldProps } from 'src/types';
-import { FormItem, TextArea } from '../../index';
 
 interface ZcTextAreaProps {
   maxLength?: number;
@@ -29,9 +28,9 @@ const ZcTextArea: FC<ZcFieldProps & ZcTextAreaProps> = (props) => {
     showCount
   };
   return (
-    <FormItem {...formItemProps}>
+    <Form.Item {...formItemProps}>
       <TextArea {...textAreaProps} />
-    </FormItem>
+    </Form.Item>
   );
 };
 
