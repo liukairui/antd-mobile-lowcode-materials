@@ -34,18 +34,13 @@ const ZcDatePicker: FC<ZcFieldProps & ZcDatePickerProps> = (props) => {
   return (
     <Form.Item
       {...formItemProps}
+      getValueProps={(v) => ({ value: moment(v).toDate() })}
+      normalize={(v) => moment(v).format(format)}
       onClick={(_, ref: RefObject<DatePickerRef>) => ref.current?.open()}
       trigger="onConfirm"
     >
       <DatePicker precision={precision} renderLabel={labelRenderer}>
-        {() => (
-          <Form.Subscribe to={[name]}>
-            {(values) => {
-              const value: Date = values[name];
-              return value ? moment(value).format(format) : '请选择';
-            }}
-          </Form.Subscribe>
-        )}
+        {() => <Form.Subscribe to={[name]}>{(v) => v[name] ?? '请选择'}</Form.Subscribe>}
       </DatePicker>
     </Form.Item>
   );
