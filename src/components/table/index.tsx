@@ -5,7 +5,8 @@ import styles from './index.module.scss';
 class Table extends React.Component<TableProps> {
   render() {
     const { className, ...restProps } = this.props;
-    return <RcTable {...restProps} className={`${styles.table} ${className}`} />;
+    const tableClassName = className === undefined ? styles.table : `${styles.table} ${className}`;
+    return <RcTable {...restProps} className={tableClassName} />;
   }
 }
 

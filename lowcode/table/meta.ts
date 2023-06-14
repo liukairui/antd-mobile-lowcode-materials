@@ -37,7 +37,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
           props: {
             setters: [
               {
-                componentName: 'VariableSetter'
+                componentName: 'JsonSetter'
               },
               {
                 componentName: 'ArraySetter',

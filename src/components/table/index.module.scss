@@ -1,13 +1,22 @@
 .table {
-  table,
-  td,
-  th {
-    border: 1px solid var(--adm-color-border);
+  border: 1px solid var(--adm-color-border);
+
+  table {
     border-collapse: collapse;
-    font-size: var(--adm-font-size-8);
   }
 
   th {
     background: var(--adm-color-light);
+    font-size: var(--adm-font-size-6);
+    font-weight: normal;
+  }
+
+  tr {
+    height: 30px;
+    font-size: var(--adm-font-size-5);
+
+    &:active {
+      background: var(--adm-color-border);
+    }
   }
 }
