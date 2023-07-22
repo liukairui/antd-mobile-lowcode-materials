@@ -1,12 +1,19 @@
 .table {
-  border: 1px solid var(--adm-color-border);
+  * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 
   table {
     border-collapse: collapse;
   }
 
   th {
-    background: var(--adm-color-light);
+    background: var(--ad-color-gray-4);
     font-size: var(--adm-font-size-6);
     font-weight: normal;
   }
@@ -16,7 +23,7 @@
     font-size: var(--adm-font-size-5);
 
     &:active {
-      background: var(--adm-color-border);
+      background: var(--ad-color-gray-3);
     }
   }
 }

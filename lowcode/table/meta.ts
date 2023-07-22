@@ -12,7 +12,6 @@ const TableMeta: IPublicTypeComponentMetadata = {
     package: 'antd-mobile-lowcode-materials',
     version: '0.1.5',
     exportName: 'Table',
-    main: 'src/index.tsx',
     destructuring: true,
     subName: ''
   },
