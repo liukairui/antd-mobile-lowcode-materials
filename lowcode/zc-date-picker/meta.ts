@@ -12,7 +12,6 @@ const ZcDatePickerMeta: IPublicTypeComponentMetadata = {
     package: 'antd-mobile-lowcode-materials',
     version: '0.1.2',
     exportName: 'ZcDatePicker',
-    main: 'src/index.tsx',
     destructuring: true,
     subName: ''
   },

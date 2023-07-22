@@ -12,7 +12,6 @@ const ZcInputMeta: IPublicTypeComponentMetadata = {
     package: 'antd-mobile-lowcode-materials',
     version: '0.1.2',
     exportName: 'ZcInput',
-    main: 'src/index.tsx',
     destructuring: true,
     subName: ''
   },

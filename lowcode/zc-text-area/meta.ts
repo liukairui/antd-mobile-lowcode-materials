@@ -12,7 +12,6 @@ const ZcTextAreaMeta: IPublicTypeComponentMetadata = {
     package: 'antd-mobile-lowcode-materials',
     version: '0.1.2',
     exportName: 'ZcTextArea',
-    main: 'src/index.tsx',
     destructuring: true,
     subName: ''
   },

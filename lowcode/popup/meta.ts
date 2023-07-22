@@ -2,7 +2,11 @@ import { IPublicTypeComponentMetadata, IPublicTypeSnippet } from '@alilc/lowcode
 
 const PopupMeta: IPublicTypeComponentMetadata = {
   componentName: 'Popup',
-  title: '弹出层',
+  title: {
+    type: 'i18n',
+    'en-US': 'Popup',
+    'zh-CN': '弹出层'
+  },
   category: '反馈',
   group: '原子组件',
   docUrl: '',
