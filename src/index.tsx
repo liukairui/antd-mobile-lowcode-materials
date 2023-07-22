@@ -92,7 +92,7 @@ export { PageIndicator } from 'antd-mobile';
 export { Steps, Step } from './components/steps';
 
 /* 走马灯 */
-export { Swiper, SwiperItem } from './components/swiper';
+export { Swiper } from './components/swiper';
 
 /* 标签 */
 export { Tag } from 'antd-mobile';

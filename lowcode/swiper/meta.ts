@@ -174,6 +174,111 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
         title: {
           label: {
             type: 'i18n',
+            'en-US': 'items',
+            'zh-CN': '项'
+          },
+          tip: {
+            type: 'i18n',
+            'en-US': 'items',
+            'zh-CN': 'items'
+          }
+        },
+        name: 'items',
+        setter: {
+          componentName: 'ArraySetter',
+          props: {
+            itemSetter: {
+              componentName: 'ObjectSetter',
+              props: {
+                config: {
+                  items: [
+                    {
+                      title: {
+                        label: {
+                          type: 'i18n',
+                          'en-US': 'children',
+                          'zh-CN': '内容'
+                        },
+                        tip: {
+                          type: 'i18n',
+                          'en-US': 'children',
+                          'zh-CN': 'children'
+                        }
+                      },
+                      name: 'children',
+                      setter: {
+                        componentName: 'SlotSetter',
+                        props: {
+                          mode: 'node'
+                        },
+                        initialValue: {
+                          type: 'JSSlot',
+                          value: []
+                        }
+                      },
+                      isRequired: true
+                    },
+                    {
+                      title: {
+                        label: {
+                          type: 'i18n',
+                          'en-US': 'key',
+                          'zh-CN': 'Key'
+                        },
+                        tip: {
+                          type: 'i18n',
+                          'en-US': 'key',
+                          'zh-CN': 'key'
+                        }
+                      },
+                      name: 'key',
+                      setter: {
+                        componentName: 'MixedSetter',
+                        props: {
+                          setters: [
+                            {
+                              componentName: 'StringSetter',
+                              initialValue: undefined
+                            },
+                            {
+                              componentName: 'NumberSetter',
+                              initialValue: undefined
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      title: {
+                        label: {
+                          type: 'i18n',
+                          'en-US': 'onClick',
+                          'zh-CN': '点击时触发'
+                        },
+                        tip: {
+                          type: 'i18n',
+                          'en-US': 'onClick',
+                          'zh-CN': 'onClick'
+                        }
+                      },
+                      name: 'onClick',
+                      setter: {
+                        componentName: 'FunctionSetter'
+                      }
+                    }
+                  ]
+                }
+              },
+              initialValue: {}
+            }
+          },
+          initialValue: []
+        }
+      },
+      {
+        title: {
+          label: {
+            type: 'i18n',
             'en-US': 'loop',
             'zh-CN': '循环'
           },

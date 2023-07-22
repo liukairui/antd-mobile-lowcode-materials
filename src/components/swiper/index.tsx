@@ -1,18 +1,29 @@
 import { Swiper as OriginalSwiper, SwiperProps, SwiperRef } from 'antd-mobile';
-import React, { createElement, createRef } from 'react';
-import { ElementProps } from '../../types';
+import React, { Key, ReactNode, createElement, createRef } from 'react';
 
-class Swiper extends React.Component<SwiperProps> {
+interface ISwiperItemProps {
+  children?: ReactNode;
+  key?: Key;
+  onClick?: () => (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
+}
+
+interface ISwiperProps extends SwiperProps {
+  items?: ISwiperItemProps[];
+}
+
+class Swiper extends React.Component<ISwiperProps> {
   ref = createRef<SwiperRef>();
+
   render() {
-    return <OriginalSwiper {...this.props} />;
+    let { children, items, ...restProps } = this.props;
+    return (
+      <OriginalSwiper {...restProps}>
+        {items?.map((itemProps) => (
+          <OriginalSwiper.Item {...itemProps} />
+        ))}
+      </OriginalSwiper>
+    );
   }
 }
 
-class SwiperItem extends React.Component<ElementProps> {
-  render() {
-    return <OriginalSwiper.Item {...this.props} />;
-  }
-}
-
-export { Swiper, SwiperItem };
+export { Swiper };
