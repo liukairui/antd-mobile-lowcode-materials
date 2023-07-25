@@ -77,6 +77,31 @@ const TextMeta: IPublicTypeComponentMetadata = {
         title: {
           label: {
             type: 'i18n',
+            'en-US': 'customChildren',
+            'zh-CN': '子元素'
+          },
+          tip: {
+            type: 'i18n',
+            'en-US': 'customChildren',
+            'zh-CN': 'customChildren'
+          }
+        },
+        name: 'customChildren',
+        setter: {
+          componentName: 'SlotSetter',
+          props: {
+            mode: 'node'
+          },
+          initialValue: {
+            type: 'JSSlot',
+            value: []
+          }
+        }
+      },
+      {
+        title: {
+          label: {
+            type: 'i18n',
             'en-US': 'deleteline',
             'zh-CN': '删除线'
           },
@@ -193,7 +218,7 @@ const TextMeta: IPublicTypeComponentMetadata = {
       style: true
     },
     component: {
-      isContainer: false
+      isContainer: true
     }
   }
 };

@@ -4,6 +4,7 @@ export interface ITextProps {
   attributes?: Record<string, string>;
   code?: boolean;
   content?: string;
+  customChildren?: ReactNode;
   deleteline?: boolean;
   elementType?: ElementType;
   italics?: boolean;
@@ -18,6 +19,7 @@ class Text extends React.Component<ITextProps> {
       attributes,
       code,
       content,
+      customChildren,
       deleteline,
       elementType,
       italics,
@@ -37,7 +39,12 @@ class Text extends React.Component<ITextProps> {
     if (underline) child = createElement('u', null, child);
 
     const Tag: ElementType = elementType || ('span' as unknown as ElementType);
-    return <Tag {...attributes} {...restProps} children={child} />;
+    return (
+      <Tag {...attributes} {...restProps}>
+        {child}
+        {customChildren}
+      </Tag>
+    );
   }
 }
 
