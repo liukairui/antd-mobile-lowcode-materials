@@ -95,7 +95,7 @@ const PickerViewMeta: IPublicTypeComponentMetadata = {
                                   label: {
                                     type: 'i18n',
                                     'en-US': 'key',
-                                    'zh-CN': '唯一标识'
+                                    'zh-CN': 'Key'
                                   },
                                   tip: {
                                     type: 'i18n',

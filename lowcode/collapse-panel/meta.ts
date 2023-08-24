@@ -113,25 +113,6 @@ const CollapsePanelMeta: IPublicTypeComponentMetadata = {
         title: {
           label: {
             type: 'i18n',
-            'en-US': 'key',
-            'zh-CN': '唯一标识'
-          },
-          tip: {
-            type: 'i18n',
-            'en-US': 'key',
-            'zh-CN': 'key'
-          }
-        },
-        name: 'key',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
-      },
-      {
-        title: {
-          label: {
-            type: 'i18n',
             'en-US': 'onClick',
             'zh-CN': '点击时触发'
           },

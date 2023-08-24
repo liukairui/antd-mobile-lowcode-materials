@@ -59,36 +59,6 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
         title: {
           label: {
             type: 'i18n',
-            'en-US': 'key',
-            'zh-CN': '键'
-          },
-          tip: {
-            type: 'i18n',
-            'en-US': 'key',
-            'zh-CN': 'key'
-          }
-        },
-        name: 'key',
-        setter: {
-          componentName: 'MixedSetter',
-          props: {
-            setters: [
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'NumberSetter',
-                initialValue: undefined
-              }
-            ]
-          }
-        }
-      },
-      {
-        title: {
-          label: {
-            type: 'i18n',
             'en-US': 'leftActions',
             'zh-CN': '左侧按钮'
           },
@@ -196,7 +166,7 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
                         label: {
                           type: 'i18n',
                           'en-US': 'key',
-                          'zh-CN': '唯一标识'
+                          'zh-CN': 'Key'
                         },
                         tip: {
                           type: 'i18n',
@@ -420,7 +390,7 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
                         label: {
                           type: 'i18n',
                           'en-US': 'key',
-                          'zh-CN': '唯一标识'
+                          'zh-CN': 'Key'
                         },
                         tip: {
                           type: 'i18n',

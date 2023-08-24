@@ -193,36 +193,6 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
         title: {
           label: {
             type: 'i18n',
-            'en-US': 'key',
-            'zh-CN': '键'
-          },
-          tip: {
-            type: 'i18n',
-            'en-US': 'key',
-            'zh-CN': 'key'
-          }
-        },
-        name: 'key',
-        setter: {
-          componentName: 'MixedSetter',
-          props: {
-            setters: [
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'NumberSetter',
-                initialValue: undefined
-              }
-            ]
-          }
-        }
-      },
-      {
-        title: {
-          label: {
-            type: 'i18n',
             'en-US': 'maxLength',
             'zh-CN': '最大长度'
           },
