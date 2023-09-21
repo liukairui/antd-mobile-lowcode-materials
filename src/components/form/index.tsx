@@ -15,7 +15,6 @@ interface FormSubscribeProps {
 class Form extends React.Component<FormProps> {
   ref = createRef<FormInstance>();
 
-  typeTemplate = '${name}不是有效的${type}';
   defaultValidateMessages = {
     default: '${name}字段校验失败',
     required: '${name}为必填项',
@@ -27,10 +26,10 @@ class Form extends React.Component<FormProps> {
       invalid: '${name}日期非法'
     },
     string: {
-      len: '${name}必须为${len}字',
-      min: '${name}至少${min}字',
-      max: '${name}不能超过${max}字',
-      range: '${name}字数必须介于${min}和${max}之间'
+      len: '${name}必须为${len}个字符',
+      min: '${name}至少${min}个字符',
+      max: '${name}不能超过${max}个字符',
+      range: '${name}字符数必须介于${min}和${max}之间'
     },
     number: {
       len: '${name}必须等于${len}',
@@ -48,19 +47,19 @@ class Form extends React.Component<FormProps> {
       mismatch: '${name}不匹配${pattern}'
     },
     types: {
-      string: this.typeTemplate,
-      method: this.typeTemplate,
-      array: this.typeTemplate,
-      object: this.typeTemplate,
-      number: this.typeTemplate,
-      date: this.typeTemplate,
-      boolean: this.typeTemplate,
-      integer: this.typeTemplate,
-      float: this.typeTemplate,
-      regexp: this.typeTemplate,
-      email: this.typeTemplate,
-      url: this.typeTemplate,
-      hex: this.typeTemplate
+      string: '${name}不是有效的${type}',
+      method: '${name}不是有效的${type}',
+      array: '${name}不是有效的${type}',
+      object: '${name}不是有效的${type}',
+      number: '${name}不是有效的${type}',
+      date: '${name}不是有效的${type}',
+      boolean: '${name}不是有效的${type}',
+      integer: '${name}不是有效的${type}',
+      float: '${name}不是有效的${type}',
+      regexp: '${name}不是有效的${type}',
+      email: '${name}不是有效的${type}',
+      url: '${name}不是有效的${type}',
+      hex: '${name}不是有效的${type}'
     }
   };
 

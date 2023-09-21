@@ -30,15 +30,6 @@ module.exports = {
           }
         ]
       }
-    ],
-    [
-      '@alilc/build-plugin-alt',
-      {
-        type: 'component',
-        inject: true,
-        library,
-        openUrl: 'http://localhost:5556/?debug'
-      }
     ]
   ]
 };

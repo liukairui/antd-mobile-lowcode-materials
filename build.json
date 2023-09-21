@@ -7,7 +7,7 @@
   },
   "plugins": [
     [
-      "build-plugin-component-multiple",
+      "build-plugin-component",
       {
         "themePackage": "@alifd/theme-2"
       }

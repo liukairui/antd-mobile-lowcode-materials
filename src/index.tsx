@@ -1,7 +1,3 @@
-const bizCssPrefix = 'bizpack';
-
-export { bizCssPrefix };
-
 /* ==================== 通用 ==================== */
 
 /* 按钮 */
