@@ -31,16 +31,7 @@ const SideBarItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'badge',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'element'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -56,10 +47,7 @@ const SideBarItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'disabled',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -75,10 +63,7 @@ const SideBarItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -94,16 +79,7 @@ const SideBarItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       }
     ],
     supports: {

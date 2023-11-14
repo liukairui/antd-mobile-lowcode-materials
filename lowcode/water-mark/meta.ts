@@ -35,19 +35,14 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
           componentName: 'MixedSetter',
           props: {
             setters: [
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              },
+              'StringSetter',
               {
                 componentName: 'ArraySetter',
                 props: {
                   itemSetter: {
-                    componentName: 'StringSetter',
-                    initialValue: ''
+                    componentName: 'StringSetter'
                   }
-                },
-                initialValue: undefined
+                }
               }
             ]
           }
@@ -67,10 +62,7 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'fontColor',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -86,10 +78,7 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'fontFamily',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -108,16 +97,7 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'NumberSetter',
-                initialValue: undefined
-              }
-            ]
+            setters: ['StringSetter', 'NumberSetter']
           }
         }
       },
@@ -166,8 +146,7 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
                 value: 'oblique'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -188,10 +167,7 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
           componentName: 'MixedSetter',
           props: {
             setters: [
-              {
-                componentName: 'NumberSetter',
-                initialValue: undefined
-              },
+              'NumberSetter',
               {
                 componentName: 'RadioGroupSetter',
                 props: {
@@ -223,8 +199,7 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
                       value: 'weight'
                     }
                   ]
-                },
-                initialValue: undefined
+                }
               }
             ]
           }
@@ -240,15 +215,11 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'fullPage',
-            'zh-CN':
-              'fullPage | 把 WaterMark 放到一个 relative 定位的父元素，它会自动撑满这个父元素的范围'
+            'zh-CN': 'fullPage | 把 WaterMark 放到一个 relative 定位的父元素，它会自动撑满这个父元素的范围'
           }
         },
         name: 'fullPage',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -264,10 +235,7 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'gapX',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -283,10 +251,7 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'gapY',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -302,10 +267,7 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'height',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -321,10 +283,7 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'image',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -340,10 +299,7 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'imageHeight',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -359,10 +315,7 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'imageWidth',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -378,10 +331,7 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'rotate',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -397,10 +347,7 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -416,10 +363,7 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'width',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -435,10 +379,7 @@ const WaterMarkMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'zIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

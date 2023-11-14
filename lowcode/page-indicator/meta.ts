@@ -54,8 +54,7 @@ const PageIndicatorMeta: IPublicTypeComponentMetadata = {
                 value: '白色'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -72,10 +71,7 @@ const PageIndicatorMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'current',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -114,8 +110,7 @@ const PageIndicatorMeta: IPublicTypeComponentMetadata = {
                 value: 'vertical'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -132,10 +127,7 @@ const PageIndicatorMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -151,10 +143,7 @@ const PageIndicatorMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'total',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

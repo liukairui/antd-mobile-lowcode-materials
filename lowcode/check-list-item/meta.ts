@@ -31,16 +31,7 @@ const CheckListItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'description',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -56,10 +47,7 @@ const CheckListItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'disabled',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -75,9 +63,7 @@ const CheckListItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -93,16 +79,7 @@ const CheckListItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'prefix',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -118,10 +95,7 @@ const CheckListItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'readOnly',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -137,10 +111,7 @@ const CheckListItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -156,16 +127,7 @@ const CheckListItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -181,10 +143,7 @@ const CheckListItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'value',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       }
     ],
     supports: {

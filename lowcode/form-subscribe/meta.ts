@@ -22,18 +22,29 @@ const FormSubscribeMeta: IPublicTypeComponentMetadata = {
           label: {
             type: 'i18n',
             'en-US': 'render',
-            'zh-CN': '渲染函数'
+            'zh-CN': '渲染区域'
           },
           tip: {
             type: 'i18n',
             'en-US': 'render',
-            'zh-CN':
-              'renderFunction | (changedValues: Record<string, any>, form: FormInstance) => ReactNode'
+            'zh-CN': 'render | (changedValues: Record<string, any>, form: FormInstance) => ReactNode'
           }
         },
         name: 'render',
         setter: {
-          componentName: 'FunctionSetter'
+          componentName: 'MixedSetter',
+          props: {
+            setters: [
+              {
+                componentName: 'SlotSetter',
+                initialValue: {
+                  type: 'JSSlot',
+                  params: ['changedValues', 'form']
+                }
+              },
+              'FunctionSetter'
+            ]
+          }
         }
       },
       {
@@ -54,11 +65,9 @@ const FormSubscribeMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       }
     ],

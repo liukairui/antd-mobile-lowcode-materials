@@ -34,12 +34,8 @@ const FloatingPanelMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'ArraySetter',
           props: {
-            itemSetter: {
-              componentName: 'NumberSetter',
-              initialValue: ''
-            }
-          },
-          initialValue: undefined
+            itemSetter: 'NumberSetter'
+          }
         }
       },
       {
@@ -52,15 +48,11 @@ const FloatingPanelMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'handleDraggingOfContent',
-            'zh-CN':
-              'handleDraggingOfContent | 开启后内容区拖拽可修改面板高度，禁用后则只能拖拽头部区域'
+            'zh-CN': 'handleDraggingOfContent | 开启后内容区拖拽可修改面板高度，禁用后则只能拖拽头部区域'
           }
         },
         name: 'handleDraggingOfContent',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -72,14 +64,11 @@ const FloatingPanelMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'onHeightChange',
-            'zh-CN':
-              'onHeightChange | animating 参数表示是否处于动画过程中 | (height: number, animating: boolean) => void'
+            'zh-CN': 'onHeightChange | animating 参数表示是否处于动画过程中 | (height: number, animating: boolean) => void'
           }
         },
         name: 'onHeightChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -95,10 +84,7 @@ const FloatingPanelMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

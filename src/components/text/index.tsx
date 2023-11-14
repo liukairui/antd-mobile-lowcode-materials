@@ -14,20 +14,8 @@ export interface ITextProps {
 }
 
 class Text extends React.Component<ITextProps> {
-  render() {
-    const {
-      attributes,
-      code,
-      content,
-      customChildren,
-      deleteline,
-      elementType,
-      italics,
-      mark,
-      strong,
-      underline,
-      ...restProps
-    } = this.props;
+  render = () => {
+    const { attributes, code, content, customChildren, deleteline, elementType, italics, mark, strong, underline, ...restProps } = this.props;
 
     let child: ReactNode = content ?? '文本';
 
@@ -45,7 +33,7 @@ class Text extends React.Component<ITextProps> {
         {customChildren}
       </Tag>
     );
-  }
+  };
 }
 
 export { Text };

@@ -31,16 +31,7 @@ const TabBarItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'badge',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'element'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -59,21 +50,7 @@ const TabBarItemMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'SlotSetter',
-                props: {
-                  mode: 'node'
-                },
-                initialValue: {
-                  type: 'JSSlot',
-                  value: []
-                }
-              },
-              {
-                componentName: 'FunctionSetter'
-              }
-            ]
+            setters: ['SlotSetter', 'FunctionSetter']
           }
         }
       },
@@ -91,10 +68,7 @@ const TabBarItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -113,21 +87,7 @@ const TabBarItemMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'SlotSetter',
-                props: {
-                  mode: 'node'
-                },
-                initialValue: {
-                  type: 'JSSlot',
-                  value: []
-                }
-              },
-              {
-                componentName: 'FunctionSetter'
-              }
-            ]
+            setters: ['SlotSetter', 'FunctionSetter']
           }
         }
       }

@@ -31,16 +31,7 @@ const JumboTabMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'description',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -56,10 +47,7 @@ const JumboTabMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'destroyOnClose',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -75,10 +63,7 @@ const JumboTabMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'disabled',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -94,10 +79,7 @@ const JumboTabMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'forceRender',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -113,10 +95,7 @@ const JumboTabMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -132,16 +111,7 @@ const JumboTabMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       }
     ],
     supports: {

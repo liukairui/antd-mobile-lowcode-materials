@@ -62,8 +62,7 @@ const DividerMeta: IPublicTypeComponentMetadata = {
                 value: 'right'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -103,8 +102,7 @@ const DividerMeta: IPublicTypeComponentMetadata = {
                 value: 'vertical'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -121,10 +119,7 @@ const DividerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

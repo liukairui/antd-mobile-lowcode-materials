@@ -30,11 +30,7 @@ const InfiniteScrollMeta: IPublicTypeComponentMetadata = {
             'zh-CN': 'hasMore'
           }
         },
-        name: 'hasMore',
-        setter: {
-          componentName: 'VariableSetter',
-          initialValue: undefined
-        }
+        name: 'hasMore'
       },
       {
         title: {
@@ -50,9 +46,7 @@ const InfiniteScrollMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loadMore',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -68,10 +62,7 @@ const InfiniteScrollMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -87,10 +78,7 @@ const InfiniteScrollMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'threshold',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

@@ -31,10 +31,7 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'closeOnAction',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -50,10 +47,7 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'closeOnTouchOutside',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -150,13 +144,9 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
                                     value: 'danger'
                                   }
                                 ]
-                              },
-                              initialValue: undefined
+                              }
                             },
-                            {
-                              componentName: 'StringSetter',
-                              initialValue: undefined
-                            }
+                            'StringSetter'
                           ]
                         }
                       }
@@ -178,16 +168,7 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
                       setter: {
                         componentName: 'MixedSetter',
                         props: {
-                          setters: [
-                            {
-                              componentName: 'StringSetter',
-                              initialValue: undefined
-                            },
-                            {
-                              componentName: 'NumberSetter',
-                              initialValue: undefined
-                            }
-                          ]
+                          setters: ['StringSetter', 'NumberSetter']
                         }
                       }
                     },
@@ -205,9 +186,7 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'onClick',
-                      setter: {
-                        componentName: 'FunctionSetter'
-                      }
+                      setter: 'FunctionSetter'
                     },
                     {
                       title: {
@@ -223,24 +202,13 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'text',
-                      setter: {
-                        componentName: 'SlotSetter',
-                        props: {
-                          mode: 'node'
-                        },
-                        initialValue: {
-                          type: 'JSSlot',
-                          value: []
-                        }
-                      }
+                      setter: 'SlotSetter'
                     }
                   ]
                 }
-              },
-              initialValue: {}
+              }
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -257,9 +225,7 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onAction',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -275,9 +241,7 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onActionsReveal',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -374,13 +338,9 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
                                     value: 'danger'
                                   }
                                 ]
-                              },
-                              initialValue: undefined
+                              }
                             },
-                            {
-                              componentName: 'StringSetter',
-                              initialValue: undefined
-                            }
+                            'StringSetter'
                           ]
                         }
                       }
@@ -402,16 +362,7 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
                       setter: {
                         componentName: 'MixedSetter',
                         props: {
-                          setters: [
-                            {
-                              componentName: 'StringSetter',
-                              initialValue: undefined
-                            },
-                            {
-                              componentName: 'NumberSetter',
-                              initialValue: undefined
-                            }
-                          ]
+                          setters: ['StringSetter', 'NumberSetter']
                         }
                       }
                     },
@@ -429,9 +380,7 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'onClick',
-                      setter: {
-                        componentName: 'FunctionSetter'
-                      }
+                      setter: 'FunctionSetter'
                     },
                     {
                       title: {
@@ -447,24 +396,13 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'text',
-                      setter: {
-                        componentName: 'SlotSetter',
-                        props: {
-                          mode: 'node'
-                        },
-                        initialValue: {
-                          type: 'JSSlot',
-                          value: []
-                        }
-                      }
+                      setter: 'SlotSetter'
                     }
                   ]
                 }
-              },
-              initialValue: {}
+              }
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -485,11 +423,9 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -506,10 +442,7 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

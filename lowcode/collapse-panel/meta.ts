@@ -34,21 +34,7 @@ const CollapsePanelMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'SlotSetter',
-                props: {
-                  mode: 'node'
-                },
-                initialValue: {
-                  type: 'JSSlot',
-                  value: []
-                }
-              },
-              {
-                componentName: 'FunctionSetter'
-              }
-            ]
+            setters: ['SlotSetter', 'FunctionSetter']
           }
         }
       },
@@ -66,10 +52,7 @@ const CollapsePanelMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'destroyOnClose',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -85,10 +68,7 @@ const CollapsePanelMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'disabled',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -104,10 +84,7 @@ const CollapsePanelMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'forceRender',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -123,9 +100,7 @@ const CollapsePanelMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -141,10 +116,7 @@ const CollapsePanelMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -160,16 +132,7 @@ const CollapsePanelMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       }
     ],
     supports: {

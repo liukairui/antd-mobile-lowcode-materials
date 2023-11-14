@@ -66,13 +66,9 @@ const SpinLoadingMeta: IPublicTypeComponentMetadata = {
                       value: 'white'
                     }
                   ]
-                },
-                initialValue: undefined
+                }
               },
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              }
+              'StringSetter'
             ]
           }
         }
@@ -91,10 +87,7 @@ const SpinLoadingMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

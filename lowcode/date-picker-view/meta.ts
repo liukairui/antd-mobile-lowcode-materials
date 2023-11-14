@@ -30,10 +30,7 @@ const DatePickerViewMeta: IPublicTypeComponentMetadata = {
             'zh-CN': 'defaultValue'
           }
         },
-        name: 'defaultValue',
-        setter: {
-          componentName: 'VariableSetter'
-        }
+        name: 'defaultValue'
       },
       {
         title: {
@@ -48,10 +45,7 @@ const DatePickerViewMeta: IPublicTypeComponentMetadata = {
             'zh-CN': 'filter | Record<Precision, (val: number, extend: {date: Date}) => boolean>'
           }
         },
-        name: 'filter',
-        setter: {
-          componentName: 'VariableSetter'
-        }
+        name: 'filter'
       },
       {
         title: {
@@ -67,10 +61,7 @@ const DatePickerViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loading',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -86,16 +77,7 @@ const DatePickerViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loadingContent',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -110,10 +92,7 @@ const DatePickerViewMeta: IPublicTypeComponentMetadata = {
             'zh-CN': 'max'
           }
         },
-        name: 'max',
-        setter: {
-          componentName: 'VariableSetter'
-        }
+        name: 'max'
       },
       {
         title: {
@@ -128,10 +107,7 @@ const DatePickerViewMeta: IPublicTypeComponentMetadata = {
             'zh-CN': 'min'
           }
         },
-        name: 'min',
-        setter: {
-          componentName: 'VariableSetter'
-        }
+        name: 'min'
       },
       {
         title: {
@@ -147,10 +123,7 @@ const DatePickerViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'mouseWheel',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -166,9 +139,7 @@ const DatePickerViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -255,8 +226,7 @@ const DatePickerViewMeta: IPublicTypeComponentMetadata = {
                 value: 'week-day'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -273,9 +243,7 @@ const DatePickerViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'renderLabel',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -291,10 +259,7 @@ const DatePickerViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -309,10 +274,7 @@ const DatePickerViewMeta: IPublicTypeComponentMetadata = {
             'zh-CN': 'value'
           }
         },
-        name: 'value',
-        setter: {
-          componentName: 'VariableSetter'
-        }
+        name: 'value'
       }
     ],
     supports: {

@@ -31,16 +31,7 @@ const CheckListMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'activeIcon',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -60,11 +51,9 @@ const CheckListMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -81,10 +70,7 @@ const CheckListMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'disabled',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -100,9 +86,7 @@ const CheckListMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'extra',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -141,8 +125,7 @@ const CheckListMeta: IPublicTypeComponentMetadata = {
                 value: 'card'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -159,10 +142,7 @@ const CheckListMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'multiple',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -178,9 +158,7 @@ const CheckListMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -196,10 +174,7 @@ const CheckListMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'readOnly',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -215,10 +190,7 @@ const CheckListMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -238,11 +210,9 @@ const CheckListMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       }
     ],

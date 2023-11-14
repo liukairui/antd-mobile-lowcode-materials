@@ -53,10 +53,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'className',
-                      setter: {
-                        componentName: 'StringSetter',
-                        initialValue: undefined
-                      }
+                      setter: 'StringSetter'
                     },
                     {
                       title: {
@@ -72,10 +69,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'danger',
-                      setter: {
-                        componentName: 'BoolSetter',
-                        initialValue: undefined
-                      }
+                      setter: 'BoolSetter'
                     },
                     {
                       title: {
@@ -91,10 +85,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'disabled',
-                      setter: {
-                        componentName: 'BoolSetter',
-                        initialValue: undefined
-                      }
+                      setter: 'BoolSetter'
                     },
                     {
                       title: {
@@ -113,16 +104,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
                       setter: {
                         componentName: 'MixedSetter',
                         props: {
-                          setters: [
-                            {
-                              componentName: 'StringSetter',
-                              initialValue: undefined
-                            },
-                            {
-                              componentName: 'NumberSetter',
-                              initialValue: undefined
-                            }
-                          ]
+                          setters: ['StringSetter', 'NumberSetter']
                         }
                       }
                     },
@@ -140,9 +122,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'onClick',
-                      setter: {
-                        componentName: 'FunctionSetter'
-                      }
+                      setter: 'FunctionSetter'
                     },
                     {
                       title: {
@@ -158,10 +138,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'primary',
-                      setter: {
-                        componentName: 'BoolSetter',
-                        initialValue: undefined
-                      }
+                      setter: 'BoolSetter'
                     },
                     {
                       title: {
@@ -177,9 +154,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'style',
-                      setter: {
-                        componentName: 'JsonSetter'
-                      }
+                      setter: 'JsonSetter'
                     },
                     {
                       title: {
@@ -195,24 +170,13 @@ const ModalMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'text',
-                      setter: {
-                        componentName: 'SlotSetter',
-                        props: {
-                          mode: 'node'
-                        },
-                        initialValue: {
-                          type: 'JSSlot',
-                          value: []
-                        }
-                      }
+                      setter: 'SlotSetter'
                     }
                   ]
                 }
-              },
-              initialValue: {}
+              }
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -229,9 +193,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'afterClose',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -247,9 +209,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'afterShow',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -265,10 +225,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'bodyClassName',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -284,9 +241,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'bodyStyle',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       },
       {
         title: {
@@ -302,10 +257,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'closeOnAction',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -321,10 +273,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'closeOnMaskClick',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -340,16 +289,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'content',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -365,10 +305,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'destroyOnClose',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -384,10 +321,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'disableBodyScroll',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -403,10 +337,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'forceRender',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -418,14 +349,11 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'getContainer',
-            'zh-CN':
-              'getContainer | 指定挂载的 HTML 节点，默认为 body，如果为 null 的话，会渲染到当前节点 HTMLElement | () => HTMLElement'
+            'zh-CN': 'getContainer | 指定挂载的 HTML 节点，默认为 body，如果为 null 的话，会渲染到当前节点 HTMLElement | () => HTMLElement'
           }
         },
         name: 'getContainer',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -441,16 +369,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'header',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -466,10 +385,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'image',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -485,10 +401,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'maskClassName',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -504,9 +417,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'maskStyle',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       },
       {
         title: {
@@ -522,9 +433,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onAction',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -540,9 +449,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClose',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -558,10 +465,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'showCloseButton',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -581,11 +485,9 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -602,10 +504,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -621,16 +520,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -646,10 +536,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'visible',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       }
     ],
     supports: {

@@ -5,13 +5,7 @@
     "quotemark": [true, "single", "jsx-double"],
     "no-empty": [true, "allow-empty-catch", "allow-empty-functions"],
     "no-console": [true, "log"],
-    "variable-name": [
-      false,
-      "check-format",
-      "allow-leading-underscore",
-      "allow-trailing-underscore",
-      "allow-pascal-case"
-    ],
+    "variable-name": [false, "check-format", "allow-leading-underscore", "allow-trailing-underscore", "allow-pascal-case"],
     "only-arrow-functions": false,
     "object-literal-sort-keys": false,
     "ordered-imports": false,

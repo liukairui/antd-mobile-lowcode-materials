@@ -31,16 +31,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'activeIcon',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -56,9 +47,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'afterClose',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -74,9 +63,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'afterShow',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -92,16 +79,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'cancelText',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -117,16 +95,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'confirmText',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -146,11 +115,9 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -167,10 +134,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'destroyOnClose',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -186,10 +150,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'forceRender',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -201,14 +162,11 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'getContainer',
-            'zh-CN':
-              'getContainer | 指定挂载的 HTML 节点，默认为 body，如果为 null 的话，会渲染到当前节点 HTMLElement | () => HTMLElement'
+            'zh-CN': 'getContainer | 指定挂载的 HTML 节点，默认为 body，如果为 null 的话，会渲染到当前节点 HTMLElement | () => HTMLElement'
           }
         },
         name: 'getContainer',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -224,9 +182,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onCancel',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -242,9 +198,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -260,9 +214,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClose',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -278,9 +230,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onConfirm',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -296,9 +246,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onSelect',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -314,9 +262,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onTabsChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -331,10 +277,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
             'zh-CN': 'options'
           }
         },
-        name: 'options',
-        setter: {
-          componentName: 'VariableSetter'
-        }
+        name: 'options'
       },
       {
         title: {
@@ -350,17 +293,14 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'placeholder',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
           label: {
             type: 'i18n',
             'en-US': 'render',
-            'zh-CN': '子元素渲染函数'
+            'zh-CN': '渲染区域'
           },
           tip: {
             type: 'i18n',
@@ -370,7 +310,19 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
         },
         name: 'render',
         setter: {
-          componentName: 'FunctionSetter'
+          componentName: 'MixedSetter',
+          props: {
+            setters: [
+              {
+                componentName: 'SlotSetter',
+                initialValue: {
+                  type: 'JSSlot',
+                  params: ['items', 'actions']
+                }
+              },
+              'FunctionSetter'
+            ]
+          }
         }
       },
       {
@@ -391,11 +343,9 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -412,10 +362,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -431,16 +378,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -460,11 +398,9 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -481,10 +417,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'visible',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       }
     ],
     supports: {

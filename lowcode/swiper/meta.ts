@@ -31,10 +31,7 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'allowTouchMove',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -50,10 +47,7 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'autoplay',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -69,10 +63,7 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'autoplayInterval',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -88,10 +79,7 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'defaultIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -130,8 +118,7 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
                 value: 'vertical'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -148,9 +135,7 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'indicator',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -166,9 +151,7 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'indicatorProps',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       },
       {
         title: {
@@ -206,17 +189,7 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'children',
-                      setter: {
-                        componentName: 'SlotSetter',
-                        props: {
-                          mode: 'node'
-                        },
-                        initialValue: {
-                          type: 'JSSlot',
-                          value: []
-                        }
-                      },
-                      isRequired: true
+                      setter: 'SlotSetter'
                     },
                     {
                       title: {
@@ -235,16 +208,7 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
                       setter: {
                         componentName: 'MixedSetter',
                         props: {
-                          setters: [
-                            {
-                              componentName: 'StringSetter',
-                              initialValue: undefined
-                            },
-                            {
-                              componentName: 'NumberSetter',
-                              initialValue: undefined
-                            }
-                          ]
+                          setters: ['StringSetter', 'NumberSetter']
                         }
                       }
                     },
@@ -262,17 +226,13 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'onClick',
-                      setter: {
-                        componentName: 'FunctionSetter'
-                      }
+                      setter: 'FunctionSetter'
                     }
                   ]
                 }
-              },
-              initialValue: {}
+              }
             }
-          },
-          initialValue: []
+          }
         }
       },
       {
@@ -289,10 +249,7 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loop',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -308,9 +265,7 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onIndexChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -326,10 +281,7 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'rubberband',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -345,10 +297,7 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'slideSize',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -398,11 +347,9 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
                     value: 'mouseup'
                   }
                 ]
-              },
-              initialValue: undefined
+              }
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -415,15 +362,11 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'stuckAtBoundary',
-            'zh-CN':
-              'stuckAtBoundary | 是否在边界两边卡住，避免出现空白，仅在非 loop 模式且 slideSize < 100 时生效'
+            'zh-CN': 'stuckAtBoundary | 是否在边界两边卡住，避免出现空白，仅在非 loop 模式且 slideSize < 100 时生效'
           }
         },
         name: 'stuckAtBoundary',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -439,10 +382,7 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -458,10 +398,7 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'trackOffset',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

@@ -53,10 +53,7 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'disabled',
-                      setter: {
-                        componentName: 'BoolSetter',
-                        initialValue: undefined
-                      }
+                      setter: 'BoolSetter'
                     },
                     {
                       title: {
@@ -75,16 +72,7 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
                       setter: {
                         componentName: 'MixedSetter',
                         props: {
-                          setters: [
-                            {
-                              componentName: 'StringSetter',
-                              initialValue: undefined
-                            },
-                            {
-                              componentName: 'NumberSetter',
-                              initialValue: undefined
-                            }
-                          ]
+                          setters: ['StringSetter', 'NumberSetter']
                         }
                       }
                     },
@@ -102,9 +90,7 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'onClick',
-                      setter: {
-                        componentName: 'FunctionSetter'
-                      }
+                      setter: 'FunctionSetter'
                     },
                     {
                       title: {
@@ -120,16 +106,7 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'icon',
-                      setter: {
-                        componentName: 'SlotSetter',
-                        props: {
-                          mode: 'node'
-                        },
-                        initialValue: {
-                          type: 'JSSlot',
-                          value: []
-                        }
-                      }
+                      setter: 'SlotSetter'
                     },
                     {
                       title: {
@@ -145,24 +122,13 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'text',
-                      setter: {
-                        componentName: 'SlotSetter',
-                        props: {
-                          mode: 'node'
-                        },
-                        initialValue: {
-                          type: 'JSSlot',
-                          value: []
-                        }
-                      }
+                      setter: 'SlotSetter'
                     }
                   ]
                 }
-              },
-              initialValue: {}
+              }
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -179,10 +145,7 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'defaultVisible',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -198,10 +161,7 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'destroyOnHide',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -213,14 +173,11 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'getContainer',
-            'zh-CN':
-              'getContainer | 指定挂载的 HTML 节点，默认为 body，如果为 null 的话，会渲染到当前节点 HTMLElement | () => HTMLElement'
+            'zh-CN': 'getContainer | 指定挂载的 HTML 节点，默认为 body，如果为 null 的话，会渲染到当前节点 HTMLElement | () => HTMLElement'
           }
         },
         name: 'getContainer',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -259,8 +216,7 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
                 value: 'dark'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -277,9 +233,7 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onAction',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -295,9 +249,7 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onVisibleChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -416,8 +368,7 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
                 value: 'left-end'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -438,11 +389,9 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -459,10 +408,7 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -493,8 +439,7 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
                 value: 'click'
               }
             ]
-          },
-          initialValue: 'click'
+          }
         }
       },
       {
@@ -510,10 +455,7 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
             'zh-CN': 'visible'
           }
         },
-        name: 'visible',
-        setter: {
-          componentName: 'VariableSetter'
-        }
+        name: 'visible'
       }
     ],
     supports: {

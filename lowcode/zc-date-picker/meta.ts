@@ -55,8 +55,7 @@ const ZcDatePickerMeta: IPublicTypeComponentMetadata = {
                 value: 'datetime'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       }
     ],

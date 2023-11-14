@@ -31,16 +31,7 @@ const ListMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'header',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -79,8 +70,7 @@ const ListMeta: IPublicTypeComponentMetadata = {
                 value: 'card'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -97,10 +87,7 @@ const ListMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

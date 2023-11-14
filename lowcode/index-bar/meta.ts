@@ -31,9 +31,7 @@ const IndexBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onIndexChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -49,10 +47,7 @@ const IndexBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'sticky',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -68,10 +63,7 @@ const IndexBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

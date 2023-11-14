@@ -27,14 +27,11 @@ const SwitchMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'beforeChange',
-            'zh-CN':
-              'beforeChange | 已弃用，推荐使用 onChange 属性 | (val: boolean) => Promise<void>'
+            'zh-CN': 'beforeChange | 已弃用，推荐使用 onChange 属性 | (val: boolean) => Promise<void>'
           }
         },
         name: 'beforeChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -50,10 +47,7 @@ const SwitchMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'checked',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -69,16 +63,7 @@ const SwitchMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'checkedText',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -94,10 +79,7 @@ const SwitchMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'defaultChecked',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -113,10 +95,7 @@ const SwitchMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'disabled',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -132,10 +111,7 @@ const SwitchMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loading',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -147,14 +123,11 @@ const SwitchMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'onChange',
-            'zh-CN':
-              'onChange | 当返回 Promise 时，会自动显示加载状态 | (val: boolean) => void | Promise<void>'
+            'zh-CN': 'onChange | 当返回 Promise 时，会自动显示加载状态 | (val: boolean) => void | Promise<void>'
           }
         },
         name: 'onChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -170,10 +143,7 @@ const SwitchMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -189,16 +159,7 @@ const SwitchMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'uncheckedText',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       }
     ],
     supports: {

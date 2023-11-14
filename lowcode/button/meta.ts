@@ -31,10 +31,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'block',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -97,8 +94,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
                 value: 'danger'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -115,10 +111,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'disabled',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -165,8 +158,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
                 value: 'outline'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -187,10 +179,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
           componentName: 'MixedSetter',
           props: {
             setters: [
-              {
-                componentName: 'BoolSetter',
-                initialValue: undefined
-              },
+              'BoolSetter',
               {
                 componentName: 'RadioGroupSetter',
                 props: {
@@ -206,8 +195,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
                       value: 'auto'
                     }
                   ]
-                },
-                initialValue: undefined
+                }
               }
             ]
           }
@@ -227,16 +215,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loadingIcon',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -252,10 +231,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loadingText',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -271,9 +247,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -289,9 +263,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onMouseDown',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -307,9 +279,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onMouseUp',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -325,9 +295,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onTouchEnd',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -343,9 +311,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onTouchStart',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -392,8 +358,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
                 value: 'rectangular'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -449,8 +414,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
                 value: 'mini'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -467,10 +431,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -517,8 +478,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
                 value: 'reset'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       }
     ],

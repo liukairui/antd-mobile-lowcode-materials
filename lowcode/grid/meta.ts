@@ -31,10 +31,7 @@ const GridMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'columns',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -53,19 +50,7 @@ const GridMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'NumberSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'JsonSetter'
-              }
-            ]
+            setters: ['NumberSetter', 'StringSetter', 'JsonSetter']
           }
         }
       },
@@ -83,10 +68,7 @@ const GridMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

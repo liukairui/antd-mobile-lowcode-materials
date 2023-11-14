@@ -40,24 +40,13 @@ const ZcMultipleCheckList: FC<ZcFieldProps & ZcMultipleCheckListProps> = (props)
           }}
         </Form.Subscribe>
       </Form.Item>
-      <Popup
-        bodyClassName={styles.popupBody}
-        closeOnMaskClick={true}
-        onClose={() => setVisible(false)}
-        visible={visible}
-      >
+      <Popup bodyClassName={styles.popupBody} closeOnMaskClick={true} onClose={() => setVisible(false)} visible={visible}>
         <NavBar
           backArrow={<div className={styles.closeIcon}>✕</div>}
           children={label}
           className={styles.navBar}
           onBack={() => setVisible(false)}
-          right={
-            <span
-              children={'确定'}
-              onClick={() => setVisible(false)}
-              style={{ color: 'var(--adm-color-primary)' }}
-            />
-          }
+          right={<span children={'确定'} onClick={() => setVisible(false)} style={{ color: 'var(--adm-color-primary)' }} />}
         />
         <Form.Item name={name} noStyle>
           <CheckList className={styles.checkList} readOnly={readOnly} multiple={true}>

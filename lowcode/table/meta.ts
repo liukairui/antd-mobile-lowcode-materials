@@ -35,9 +35,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
           componentName: 'MixedSetter',
           props: {
             setters: [
-              {
-                componentName: 'JsonSetter'
-              },
+              'JsonSetter',
               {
                 componentName: 'ArraySetter',
                 props: {
@@ -91,8 +89,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                                     value: 'right'
                                   }
                                 ]
-                              },
-                              initialValue: undefined
+                              }
                             }
                           },
                           {
@@ -109,10 +106,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                               }
                             },
                             name: 'className',
-                            setter: {
-                              componentName: 'StringSetter',
-                              initialValue: undefined
-                            }
+                            setter: 'StringSetter'
                           },
                           {
                             title: {
@@ -128,10 +122,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                               }
                             },
                             name: 'colSpan',
-                            setter: {
-                              componentName: 'StringSetter',
-                              initialValue: undefined
-                            }
+                            setter: 'StringSetter'
                           },
                           {
                             title: {
@@ -147,10 +138,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                               }
                             },
                             name: 'dataIndex',
-                            setter: {
-                              componentName: 'StringSetter',
-                              initialValue: undefined
-                            }
+                            setter: 'StringSetter'
                           },
                           {
                             title: {
@@ -166,10 +154,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                               }
                             },
                             name: 'ellipsis',
-                            setter: {
-                              componentName: 'BoolSetter',
-                              initialValue: undefined
-                            }
+                            setter: 'BoolSetter'
                           },
                           {
                             title: {
@@ -189,10 +174,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                               componentName: 'MixedSetter',
                               props: {
                                 setters: [
-                                  {
-                                    componentName: 'BoolSetter',
-                                    initialValue: undefined
-                                  },
+                                  'BoolSetter',
                                   {
                                     componentName: 'RadioGroupSetter',
                                     props: {
@@ -216,8 +198,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                                           value: 'right'
                                         }
                                       ]
-                                    },
-                                    initialValue: undefined
+                                    }
                                   }
                                 ]
                               }
@@ -237,10 +218,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                               }
                             },
                             name: 'key',
-                            setter: {
-                              componentName: 'StringSetter',
-                              initialValue: undefined
-                            }
+                            setter: 'StringSetter'
                           },
                           {
                             title: {
@@ -252,14 +230,12 @@ const TableMeta: IPublicTypeComponentMetadata = {
                               tip: {
                                 type: 'i18n',
                                 'en-US': 'onCell',
-                                'zh-CN':
-                                  'onCell | (data: DataType, index?: number) => React.HTMLAttributes<any> | React.TdHTMLAttributes<any>'
+                                'zh-CN': 'onCell | (data: DataType, index?: number) => React.HTMLAttributes<any> | React.TdHTMLAttributes<any>'
                               }
                             },
                             name: 'onCell',
                             setter: {
-                              componentName: 'FunctionSetter',
-                              initialValue: undefined
+                              componentName: 'FunctionSetter'
                             }
                           },
                           {
@@ -272,14 +248,12 @@ const TableMeta: IPublicTypeComponentMetadata = {
                               tip: {
                                 type: 'i18n',
                                 'en-US': 'onHeaderCell',
-                                'zh-CN':
-                                  'onHeaderCell | (data: DataType, index?: number) => React.HTMLAttributes<any> | React.TdHTMLAttributes<any>'
+                                'zh-CN': 'onHeaderCell | (data: DataType, index?: number) => React.HTMLAttributes<any> | React.TdHTMLAttributes<any>'
                               }
                             },
                             name: 'onHeaderCell',
                             setter: {
-                              componentName: 'FunctionSetter',
-                              initialValue: undefined
+                              componentName: 'FunctionSetter'
                             }
                           },
                           {
@@ -292,14 +266,24 @@ const TableMeta: IPublicTypeComponentMetadata = {
                               tip: {
                                 type: 'i18n',
                                 'en-US': 'render',
-                                'zh-CN':
-                                  'render | (value: any, record: RecordType, index: number) => React.ReactNode | RenderedCell<RecordType>'
+                                'zh-CN': 'render | (value: any, record: RecordType, index: number) => React.ReactNode | RenderedCell<RecordType>'
                               }
                             },
                             name: 'render',
                             setter: {
-                              componentName: 'FunctionSetter',
-                              initialValue: undefined
+                              componentName: 'MixedSetter',
+                              props: {
+                                setters: [
+                                  {
+                                    componentName: 'SlotSetter',
+                                    initialValue: {
+                                      type: 'JSSlot',
+                                      params: ['value', 'record', 'index']
+                                    }
+                                  },
+                                  'FunctionSetter'
+                                ]
+                              }
                             }
                           },
                           {
@@ -339,8 +323,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                                     value: 'rowgroup'
                                   }
                                 ]
-                              },
-                              initialValue: undefined
+                              }
                             }
                           },
                           {
@@ -358,13 +341,9 @@ const TableMeta: IPublicTypeComponentMetadata = {
                             },
                             name: 'title',
                             setter: {
-                              componentName: 'SlotSetter',
+                              componentName: 'MixedSetter',
                               props: {
-                                mode: 'node'
-                              },
-                              initialValue: {
-                                type: 'JSSlot',
-                                value: []
+                                setters: ['StringSetter', 'SlotSetter']
                               }
                             }
                           },
@@ -385,26 +364,15 @@ const TableMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'NumberSetter',
-                                    initialValue: undefined
-                                  }
-                                ]
+                                setters: ['StringSetter', 'NumberSetter']
                               }
                             }
                           }
                         ]
                       }
-                    },
-                    initialValue: {}
+                    }
                   }
-                },
-                initialValue: undefined
+                }
               }
             ]
           }
@@ -423,10 +391,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
             'zh-CN': 'components'
           }
         },
-        name: 'components',
-        setter: {
-          componentName: 'VariableSetter'
-        }
+        name: 'components'
       },
       {
         title: {
@@ -441,10 +406,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
             'zh-CN': 'data'
           }
         },
-        name: 'data',
-        setter: {
-          componentName: 'VariableSetter'
-        }
+        name: 'data'
       },
       {
         title: {
@@ -460,16 +422,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'emptyText',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -504,10 +457,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                     }
                   },
                   name: 'defaultExpandAllRows',
-                  setter: {
-                    componentName: 'BoolSetter',
-                    initialValue: undefined
-                  }
+                  setter: 'BoolSetter'
                 },
                 {
                   title: {
@@ -526,12 +476,8 @@ const TableMeta: IPublicTypeComponentMetadata = {
                   setter: {
                     componentName: 'ArraySetter',
                     props: {
-                      itemSetter: {
-                        componentName: 'StringSetter',
-                        initialValue: undefined
-                      }
-                    },
-                    initialValue: undefined
+                      itemSetter: 'StringSetter'
+                    }
                   }
                 },
                 {
@@ -544,14 +490,11 @@ const TableMeta: IPublicTypeComponentMetadata = {
                     tip: {
                       type: 'i18n',
                       'en-US': 'expandedRowClassName',
-                      'zh-CN':
-                        'expandedRowClassName | (record: RecordType, index: number, indent: number) => string'
+                      'zh-CN': 'expandedRowClassName | (record: RecordType, index: number, indent: number) => string'
                     }
                   },
                   name: 'expandedRowClassName',
-                  setter: {
-                    componentName: 'FunctionSetter'
-                  }
+                  setter: 'FunctionSetter'
                 },
                 undefined,
                 {
@@ -571,12 +514,8 @@ const TableMeta: IPublicTypeComponentMetadata = {
                   setter: {
                     componentName: 'ArraySetter',
                     props: {
-                      itemSetter: {
-                        componentName: 'StringSetter',
-                        initialValue: undefined
-                      }
-                    },
-                    initialValue: undefined
+                      itemSetter: 'StringSetter'
+                    }
                   }
                 },
                 {
@@ -589,14 +528,11 @@ const TableMeta: IPublicTypeComponentMetadata = {
                     tip: {
                       type: 'i18n',
                       'en-US': 'expandedRowRender',
-                      'zh-CN':
-                        'expandedRowRender | (record: ValueType, index: number, indent: number, expanded: boolean) => React.ReactNode'
+                      'zh-CN': 'expandedRowRender | (record: ValueType, index: number, indent: number, expanded: boolean) => React.ReactNode'
                     }
                   },
                   name: 'expandedRowRender',
-                  setter: {
-                    componentName: 'FunctionSetter'
-                  }
+                  setter: 'FunctionSetter'
                 },
                 {
                   title: {
@@ -608,14 +544,11 @@ const TableMeta: IPublicTypeComponentMetadata = {
                     tip: {
                       type: 'i18n',
                       'en-US': 'expandIcon',
-                      'zh-CN':
-                        'expandIcon | (props: RenderExpandIconProps<RecordType>) => React.ReactNode'
+                      'zh-CN': 'expandIcon | (props: RenderExpandIconProps<RecordType>) => React.ReactNode'
                     }
                   },
                   name: 'expandIcon',
-                  setter: {
-                    componentName: 'FunctionSetter'
-                  }
+                  setter: 'FunctionSetter'
                 },
                 {
                   title: {
@@ -631,10 +564,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                     }
                   },
                   name: 'expandIconColumnIndex',
-                  setter: {
-                    componentName: 'NumberSetter',
-                    initialValue: undefined
-                  }
+                  setter: 'NumberSetter'
                 },
                 {
                   title: {
@@ -650,10 +580,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                     }
                   },
                   name: 'expandRowByClick',
-                  setter: {
-                    componentName: 'BoolSetter',
-                    initialValue: undefined
-                  }
+                  setter: 'BoolSetter'
                 },
                 {
                   title: {
@@ -673,10 +600,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                     componentName: 'MixedSetter',
                     props: {
                       setters: [
-                        {
-                          componentName: 'BoolSetter',
-                          initialValue: undefined
-                        },
+                        'BoolSetter',
                         {
                           componentName: 'RadioGroupSetter',
                           props: {
@@ -700,8 +624,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                                 value: 'right'
                               }
                             ]
-                          },
-                          initialValue: undefined
+                          }
                         }
                       ]
                     }
@@ -721,10 +644,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                     }
                   },
                   name: 'indentSize',
-                  setter: {
-                    componentName: 'NumberSetter',
-                    initialValue: undefined
-                  }
+                  setter: 'NumberSetter'
                 },
                 {
                   title: {
@@ -740,9 +660,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                     }
                   },
                   name: 'onExpand',
-                  setter: {
-                    componentName: 'FunctionSetter'
-                  }
+                  setter: 'FunctionSetter'
                 },
                 {
                   title: {
@@ -758,9 +676,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                     }
                   },
                   name: 'onExpandedRowsChange',
-                  setter: {
-                    componentName: 'FunctionSetter'
-                  }
+                  setter: 'FunctionSetter'
                 },
                 {
                   title: {
@@ -776,9 +692,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                     }
                   },
                   name: 'rowExpandable',
-                  setter: {
-                    componentName: 'FunctionSetter'
-                  }
+                  setter: 'FunctionSetter'
                 }
               ]
             }
@@ -799,9 +713,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'footer',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -817,10 +729,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'id',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -832,14 +741,11 @@ const TableMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'onHeaderRow',
-            'zh-CN':
-              'onHeaderRow | (data: DataType, index?: number) => React.HTMLAttributes<any> | React.TdHTMLAttributes<any>;'
+            'zh-CN': 'onHeaderRow | (data: DataType, index?: number) => React.HTMLAttributes<any> | React.TdHTMLAttributes<any>;'
           }
         },
         name: 'onHeaderRow',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -851,14 +757,11 @@ const TableMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'onRow',
-            'zh-CN':
-              'onRow | (data: DataType, index?: number) => React.HTMLAttributes<any> | React.TdHTMLAttributes<any>'
+            'zh-CN': 'onRow | (data: DataType, index?: number) => React.HTMLAttributes<any> | React.TdHTMLAttributes<any>'
           }
         },
         name: 'onRow',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -874,10 +777,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'prefixCls',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -896,15 +796,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'FunctionSetter'
-              }
-            ]
+            setters: ['StringSetter', 'FunctionSetter']
           }
         }
       },
@@ -925,15 +817,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'FunctionSetter'
-              }
-            ]
+            setters: ['StringSetter', 'FunctionSetter']
           }
         }
       },
@@ -973,20 +857,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                   setter: {
                     componentName: 'MixedSetter',
                     props: {
-                      setters: [
-                        {
-                          componentName: 'BoolSetter',
-                          initialValue: undefined
-                        },
-                        {
-                          componentName: 'StringSetter',
-                          initialValue: undefined
-                        },
-                        {
-                          componentName: 'NumberSetter',
-                          initialValue: undefined
-                        }
-                      ]
+                      setters: ['BoolSetter', 'StringSetter', 'NumberSetter']
                     }
                   }
                 },
@@ -1007,20 +878,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                   setter: {
                     componentName: 'MixedSetter',
                     props: {
-                      setters: [
-                        {
-                          componentName: 'BoolSetter',
-                          initialValue: undefined
-                        },
-                        {
-                          componentName: 'StringSetter',
-                          initialValue: undefined
-                        },
-                        {
-                          componentName: 'NumberSetter',
-                          initialValue: undefined
-                        }
-                      ]
+                      setters: ['BoolSetter', 'StringSetter', 'NumberSetter']
                     }
                   }
                 }
@@ -1043,10 +901,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'showHeader',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -1066,10 +921,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
           componentName: 'MixedSetter',
           props: {
             setters: [
-              {
-                componentName: 'BoolSetter',
-                initialValue: undefined
-              },
+              'BoolSetter',
               {
                 componentName: 'ObjectSetter',
                 props: {
@@ -1089,10 +941,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                           }
                         },
                         name: 'offsetHeader',
-                        setter: {
-                          componentName: 'NumberSetter',
-                          initialValue: undefined
-                        }
+                        setter: 'NumberSetter'
                       },
                       {
                         title: {
@@ -1108,10 +957,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                           }
                         },
                         name: 'offsetScroll',
-                        setter: {
-                          componentName: 'NumberSetter',
-                          initialValue: undefined
-                        }
+                        setter: 'NumberSetter'
                       },
                       {
                         title: {
@@ -1127,9 +973,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                           }
                         },
                         name: 'getContainer',
-                        setter: {
-                          componentName: 'FunctionSetter'
-                        }
+                        setter: 'FunctionSetter'
                       }
                     ]
                   }
@@ -1153,9 +997,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'summary',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -1194,8 +1036,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
                 value: 'fixed'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       }
     ],

@@ -18,8 +18,7 @@ export default {
     messageVariables: { name: '复选框' },
     name: 'checkbox',
     rules: [{ required: true }],
-    _unsafe_MixedSetter_name_select: 'StringSetter',
-    initialValue: ''
+    _unsafe_MixedSetter_name_select: 'StringSetter'
   },
   hidden: false,
   title: '表单项',

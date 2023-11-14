@@ -31,9 +31,7 @@ const TextMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'attributes',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       },
       {
         title: {
@@ -49,10 +47,7 @@ const TextMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'code',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -69,8 +64,7 @@ const TextMeta: IPublicTypeComponentMetadata = {
         },
         name: 'content',
         setter: {
-          componentName: 'TextAreaSetter',
-          initialValue: undefined
+          componentName: 'TextAreaSetter'
         }
       },
       {
@@ -87,16 +81,7 @@ const TextMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'customChildren',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -112,10 +97,7 @@ const TextMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'deleteline',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -131,10 +113,7 @@ const TextMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'elementType',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -150,10 +129,7 @@ const TextMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'italics',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -169,10 +145,7 @@ const TextMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'mark',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -188,10 +161,7 @@ const TextMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'strong',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -207,10 +177,7 @@ const TextMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'underline',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       }
     ],
     supports: {

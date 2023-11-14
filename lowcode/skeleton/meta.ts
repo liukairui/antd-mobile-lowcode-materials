@@ -31,10 +31,7 @@ const SkeletonMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'animated',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -50,10 +47,7 @@ const SkeletonMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

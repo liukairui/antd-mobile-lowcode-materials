@@ -31,10 +31,7 @@ const CardMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'bodyClassName',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -50,9 +47,7 @@ const CardMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'bodyStyle',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       },
       {
         title: {
@@ -68,16 +63,7 @@ const CardMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'extra',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -93,10 +79,7 @@ const CardMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'headerClassName',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -112,9 +95,7 @@ const CardMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'headerStyle',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       },
       {
         title: {
@@ -130,9 +111,7 @@ const CardMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onBodyClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -148,9 +127,7 @@ const CardMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -166,9 +143,7 @@ const CardMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onHeaderClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -184,10 +159,7 @@ const CardMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -203,16 +175,7 @@ const CardMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       }
     ],
     supports: {

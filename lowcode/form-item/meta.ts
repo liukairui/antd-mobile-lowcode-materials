@@ -34,22 +34,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'BoolSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'SlotSetter',
-                props: {
-                  mode: 'node'
-                },
-                initialValue: {
-                  type: 'JSSlot',
-                  value: []
-                }
-              }
-            ]
+            setters: ['BoolSetter', 'SlotSetter']
           }
         }
       },
@@ -90,8 +75,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
                 value: 'right'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -108,10 +92,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'clickable',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -131,11 +112,9 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -152,16 +131,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'description',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -177,10 +147,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'disabled',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -196,16 +163,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'extra',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -221,9 +179,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'getValueFromEvent',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -239,9 +195,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'getValueProps',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -257,10 +211,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'hasFeedback',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -276,16 +227,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'help',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -301,10 +243,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'hidden',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -323,16 +262,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'NumberSetter',
-                initialValue: undefined
-              }
-            ]
+            setters: ['StringSetter', 'NumberSetter']
           }
         }
       },
@@ -350,16 +280,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'label',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -398,8 +319,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
                 value: 'vertical'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -416,9 +336,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'messageVariables',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       },
       {
         title: {
@@ -438,19 +356,14 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           componentName: 'MixedSetter',
           props: {
             setters: [
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              },
+              'StringSetter',
               {
                 componentName: 'ArraySetter',
                 props: {
                   itemSetter: {
-                    componentName: 'StringSetter',
-                    initialValue: ''
+                    componentName: 'StringSetter'
                   }
-                },
-                initialValue: undefined
+                }
               }
             ]
           }
@@ -470,10 +383,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'noStyle',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -489,9 +399,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'normalize',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -503,14 +411,11 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'onClick | 能获取控件 Ref',
-            'zh-CN':
-              'onClick | (e:React.MouseEvent, widgetRef: React.MutableRefObject<any>) => void'
+            'zh-CN': 'onClick | (e:React.MouseEvent, widgetRef: React.MutableRefObject<any>) => void'
           }
         },
         name: 'onClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -526,10 +431,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'preserve',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -545,10 +447,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'required',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -564,10 +463,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'rules',
-        setter: {
-          componentName: 'JsonSetter',
-          initialValue: undefined
-        }
+        setter: 'JsonSetter'
       },
       {
         title: {
@@ -579,23 +475,14 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'shouldUpdate',
-            'zh-CN':
-              'shouldUpdate | 当设为 true 时，表单值的任何变化都将更新控件区域 | (prevValue, curValue) => boolean'
+            'zh-CN': 'shouldUpdate | 当设为 true 时，表单值的任何变化都将更新控件区域 | (prevValue, curValue) => boolean'
           }
         },
         name: 'shouldUpdate',
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'BoolSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'FunctionSetter'
-              }
-            ]
+            setters: ['BoolSetter', 'FunctionSetter']
           }
         }
       },
@@ -613,10 +500,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -632,10 +516,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'trigger',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -647,8 +528,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'validateFirst',
-            'zh-CN':
-              'validateFirst | 当某一规则校验不通过时，是否停止剩下的规则的校验。设置 parallel 时会并行校验'
+            'zh-CN': 'validateFirst | 当某一规则校验不通过时，是否停止剩下的规则的校验。设置 parallel 时会并行校验'
           }
         },
         name: 'validateFirst',
@@ -656,10 +536,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           componentName: 'MixedSetter',
           props: {
             setters: [
-              {
-                componentName: 'BoolSetter',
-                initialValue: undefined
-              },
+              'BoolSetter',
               {
                 componentName: 'RadioGroupSetter',
                 props: {
@@ -675,8 +552,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
                       value: 'parallel'
                     }
                   ]
-                },
-                initialValue: undefined
+                }
               }
             ]
           }
@@ -700,19 +576,14 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           componentName: 'MixedSetter',
           props: {
             setters: [
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              },
+              'StringSetter',
               {
                 componentName: 'ArraySetter',
                 props: {
                   itemSetter: {
-                    componentName: 'StringSetter',
-                    initialValue: ''
+                    componentName: 'StringSetter'
                   }
-                },
-                initialValue: undefined
+                }
               }
             ]
           }
@@ -728,15 +599,11 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'valuePropName',
-            'zh-CN':
-              'valuePropName | 如 Switch 的是 checked，该属性为 getValueProps 的封装，自定义 getValueProps 后会失效'
+            'zh-CN': 'valuePropName | 如 Switch 的是 checked，该属性为 getValueProps 的封装，自定义 getValueProps 后会失效'
           }
         },
         name: 'valuePropName',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       }
     ],
     supports: {

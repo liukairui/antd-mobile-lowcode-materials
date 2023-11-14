@@ -31,10 +31,7 @@ const TabBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'activeKey',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -50,10 +47,7 @@ const TabBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'defaultActiveKey',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -69,9 +63,7 @@ const TabBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -87,10 +79,7 @@ const TabBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'safeArea',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -106,10 +95,7 @@ const TabBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

@@ -20,7 +20,6 @@ export default {
     name: 'switch',
     rules: [{ required: true }],
     _unsafe_MixedSetter_name_select: 'StringSetter',
-    initialValue: '',
     childElementPosition: 'right'
   },
   hidden: false,

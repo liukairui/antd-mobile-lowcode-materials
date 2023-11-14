@@ -31,10 +31,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'alt',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -129,8 +126,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
                 value: 'sync'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -147,10 +143,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'draggable',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -166,16 +159,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'fallback',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -238,8 +222,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
                 value: 'scale-down'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -259,16 +242,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'NumberSetter',
-                initialValue: undefined
-              }
-            ]
+            setters: ['StringSetter', 'NumberSetter']
           }
         }
       },
@@ -286,10 +260,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'lazy',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -328,8 +299,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
                 value: 'eager'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -346,9 +316,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -364,9 +332,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onContainerClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -382,9 +348,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onError',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -400,9 +364,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onLoad',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -418,16 +380,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'placeholder',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -522,8 +475,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
                 value: 'unsafe-url'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -540,10 +492,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'sizes',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -559,10 +508,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'src',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -578,10 +524,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'srcSet',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -597,10 +540,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -616,10 +556,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'useMap',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -638,16 +575,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'NumberSetter',
-                initialValue: undefined
-              }
-            ]
+            setters: ['StringSetter', 'NumberSetter']
           }
         }
       }

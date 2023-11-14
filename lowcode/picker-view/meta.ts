@@ -60,16 +60,7 @@ const PickerViewMeta: IPublicTypeComponentMetadata = {
                                   }
                                 },
                                 name: 'label',
-                                setter: {
-                                  componentName: 'SlotSetter',
-                                  props: {
-                                    mode: 'node'
-                                  },
-                                  initialValue: {
-                                    type: 'JSSlot',
-                                    value: []
-                                  }
-                                }
+                                setter: 'SlotSetter'
                               },
                               {
                                 title: {
@@ -85,10 +76,7 @@ const PickerViewMeta: IPublicTypeComponentMetadata = {
                                   }
                                 },
                                 name: 'value',
-                                setter: {
-                                  componentName: 'StringSetter',
-                                  initialValue: undefined
-                                }
+                                setter: 'StringSetter'
                               },
                               {
                                 title: {
@@ -107,16 +95,7 @@ const PickerViewMeta: IPublicTypeComponentMetadata = {
                                 setter: {
                                   componentName: 'MixedSetter',
                                   props: {
-                                    setters: [
-                                      {
-                                        componentName: 'StringSetter',
-                                        initialValue: undefined
-                                      },
-                                      {
-                                        componentName: 'NumberSetter',
-                                        initialValue: undefined
-                                      }
-                                    ]
+                                    setters: ['StringSetter', 'NumberSetter']
                                   }
                                 }
                               }
@@ -124,15 +103,11 @@ const PickerViewMeta: IPublicTypeComponentMetadata = {
                           }
                         }
                       }
-                    },
-                    initialValue: undefined
+                    }
                   }
-                },
-                initialValue: []
+                }
               },
-              {
-                componentName: 'FunctionSetter'
-              }
+              'FunctionSetter'
             ]
           }
         }
@@ -155,11 +130,9 @@ const PickerViewMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -176,10 +149,7 @@ const PickerViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loading',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -195,16 +165,7 @@ const PickerViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loadingContent',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -220,10 +181,7 @@ const PickerViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'mouseWheel',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -239,9 +197,7 @@ const PickerViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -253,14 +209,11 @@ const PickerViewMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'renderLabel',
-            'zh-CN':
-              'renderLabel | 默认值为 (item) => item.label | (item: PickerColumnItem) => ReactNode'
+            'zh-CN': 'renderLabel | 默认值为 (item) => item.label | (item: PickerColumnItem) => ReactNode'
           }
         },
         name: 'renderLabel',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -276,10 +229,7 @@ const PickerViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -299,11 +249,9 @@ const PickerViewMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       }
     ],

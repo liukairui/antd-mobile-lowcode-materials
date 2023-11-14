@@ -31,16 +31,7 @@ const NavBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'back',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -59,22 +50,7 @@ const NavBarMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'BoolSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'SlotSetter',
-                props: {
-                  mode: 'node'
-                },
-                initialValue: {
-                  type: 'JSSlot',
-                  value: []
-                }
-              }
-            ]
+            setters: ['BoolSetter', 'SlotSetter']
           }
         }
       },
@@ -92,16 +68,7 @@ const NavBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'left',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -117,9 +84,7 @@ const NavBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onBack',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -135,16 +100,7 @@ const NavBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'right',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -160,10 +116,7 @@ const NavBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

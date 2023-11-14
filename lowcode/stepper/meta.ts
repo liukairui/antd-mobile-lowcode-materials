@@ -31,10 +31,7 @@ const StepperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'allowEmpty',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -53,18 +50,7 @@ const StepperMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'NumberSetter',
-                isRequired: false,
-                initialValue: undefined
-              },
-              {
-                componentName: 'StringSetter',
-                isRequired: false,
-                initialValue: undefined
-              }
-            ]
+            setters: ['NumberSetter', 'StringSetter']
           }
         }
       },
@@ -82,10 +68,7 @@ const StepperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'digits',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -101,10 +84,7 @@ const StepperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'disabled',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -123,11 +103,7 @@ const StepperMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'FunctionSetter'
-              }
-            ]
+            setters: ['FunctionSetter']
           }
         }
       },
@@ -145,10 +121,7 @@ const StepperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'inputReadOnly',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -167,18 +140,7 @@ const StepperMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'NumberSetter',
-                isRequired: false,
-                initialValue: undefined
-              },
-              {
-                componentName: 'StringSetter',
-                isRequired: false,
-                initialValue: undefined
-              }
-            ]
+            setters: ['NumberSetter', 'StringSetter']
           }
         }
       },
@@ -199,18 +161,7 @@ const StepperMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'NumberSetter',
-                isRequired: false,
-                initialValue: undefined
-              },
-              {
-                componentName: 'StringSetter',
-                isRequired: false,
-                initialValue: undefined
-              }
-            ]
+            setters: ['NumberSetter', 'StringSetter']
           }
         }
       },
@@ -228,9 +179,7 @@ const StepperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onBlur',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -246,9 +195,7 @@ const StepperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -264,9 +211,7 @@ const StepperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onFocus',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -278,14 +223,11 @@ const StepperMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'parser',
-            'zh-CN':
-              'parser | 将输入解析为对应数字，一般配合 formatter 使用 | (text: string) => number'
+            'zh-CN': 'parser | 将输入解析为对应数字，一般配合 formatter 使用 | (text: string) => number'
           }
         },
         name: 'parser',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -301,10 +243,7 @@ const StepperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'step',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -321,10 +260,7 @@ const StepperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'stringMode',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -340,10 +276,7 @@ const StepperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -362,16 +295,7 @@ const StepperMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'NumberSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              }
-            ]
+            setters: ['NumberSetter', 'StringSetter']
           }
         }
       }

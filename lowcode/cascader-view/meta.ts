@@ -31,16 +31,7 @@ const CascaderViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'activeIcon',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -60,11 +51,9 @@ const CascaderViewMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -81,9 +70,7 @@ const CascaderViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -99,9 +86,7 @@ const CascaderViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onTabsChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -116,10 +101,7 @@ const CascaderViewMeta: IPublicTypeComponentMetadata = {
             'zh-CN': 'options'
           }
         },
-        name: 'options',
-        setter: {
-          componentName: 'VariableSetter'
-        }
+        name: 'options'
       },
       {
         title: {
@@ -138,15 +120,7 @@ const CascaderViewMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'FunctionSetter'
-              }
-            ]
+            setters: ['StringSetter', 'FunctionSetter']
           }
         }
       },
@@ -164,10 +138,7 @@ const CascaderViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -187,11 +158,9 @@ const CascaderViewMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       }
     ],

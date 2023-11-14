@@ -53,16 +53,7 @@ const FooterMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'text',
-                      setter: {
-                        componentName: 'SlotSetter',
-                        props: {
-                          mode: 'node'
-                        },
-                        initialValue: {
-                          type: 'JSSlot',
-                          value: []
-                        }
-                      }
+                      setter: 'SlotSetter'
                     },
                     {
                       title: {
@@ -101,21 +92,14 @@ const FooterMeta: IPublicTypeComponentMetadata = {
                               value: 'link'
                             }
                           ]
-                        },
-                        initialValue: undefined
+                        }
                       }
                     }
-                  ],
-                  extraSetter: {
-                    componentName: 'MixedSetter',
-                    props: {}
-                  }
+                  ]
                 }
-              },
-              initialValue: {}
+              }
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -132,16 +116,7 @@ const FooterMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'content',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -157,16 +132,7 @@ const FooterMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'label',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -204,10 +170,7 @@ const FooterMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'text',
-                      setter: {
-                        componentName: 'StringSetter',
-                        initialValue: undefined
-                      }
+                      setter: 'StringSetter'
                     },
                     {
                       title: {
@@ -223,22 +186,13 @@ const FooterMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'href',
-                      setter: {
-                        componentName: 'StringSetter',
-                        initialValue: undefined
-                      }
+                      setter: 'StringSetter'
                     }
-                  ],
-                  extraSetter: {
-                    componentName: 'MixedSetter',
-                    props: {}
-                  }
+                  ]
                 }
-              },
-              initialValue: {}
+              }
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -251,14 +205,11 @@ const FooterMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'onChipClick',
-            'zh-CN':
-              'onChipClick | 仅在标签 type 为 link 生效 | (item: ChipItem, index: number) => void'
+            'zh-CN': 'onChipClick | 仅在标签 type 为 link 生效 | (item: ChipItem, index: number) => void'
           }
         },
         name: 'onChipClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -270,14 +221,11 @@ const FooterMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'onLinkClick',
-            'zh-CN':
-              'onLinkClick | 将拦截 a 标签的 href 跳转行为 | (item: LinkItem, index: number) => void'
+            'zh-CN': 'onLinkClick | 将拦截 a 标签的 href 跳转行为 | (item: LinkItem, index: number) => void'
           }
         },
         name: 'onLinkClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -293,10 +241,7 @@ const FooterMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

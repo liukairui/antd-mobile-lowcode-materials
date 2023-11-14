@@ -39,24 +39,10 @@ const ZcCheckList: FC<ZcFieldProps & ZcCheckListProps> = (props) => {
           }}
         </Form.Subscribe>
       </Form.Item>
-      <Popup
-        bodyClassName={styles.popupBody}
-        closeOnMaskClick={true}
-        onClose={() => setVisible(false)}
-        visible={visible}
-      >
-        <NavBar
-          backArrow={<div className={styles.closeIcon}>✕</div>}
-          children={label}
-          className={styles.navBar}
-          onBack={() => setVisible(false)}
-        />
+      <Popup bodyClassName={styles.popupBody} closeOnMaskClick={true} onClose={() => setVisible(false)} visible={visible}>
+        <NavBar backArrow={<div className={styles.closeIcon}>✕</div>} children={label} className={styles.navBar} onBack={() => setVisible(false)} />
         <Form.Item name={name} noStyle>
-          <CheckList
-            className={styles.checkList}
-            onChange={() => setVisible(false)}
-            readOnly={readOnly}
-          >
+          <CheckList className={styles.checkList} onChange={() => setVisible(false)} readOnly={readOnly}>
             {items?.map((item) => {
               const { content, ...restProps } = item;
               return <CheckList.Item {...restProps} children={content} />;

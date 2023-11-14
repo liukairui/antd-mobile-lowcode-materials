@@ -31,10 +31,7 @@ const BadgeMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'bordered',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -50,10 +47,7 @@ const BadgeMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'color',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -69,16 +63,7 @@ const BadgeMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'content',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'element'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -94,10 +79,7 @@ const BadgeMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -113,10 +95,7 @@ const BadgeMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'wrapperClassName',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -132,9 +111,7 @@ const BadgeMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'wrapperStyle',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       }
     ],
     supports: {

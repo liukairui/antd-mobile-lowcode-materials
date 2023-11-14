@@ -31,9 +31,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'actions',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       },
       {
         title: {
@@ -49,9 +47,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'afterClose',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -67,16 +63,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'cancelText',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -92,10 +79,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'closeOnAction',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -111,10 +95,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'closeOnMaskClick',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -130,10 +111,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'destroyOnClose',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -149,16 +127,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'extra',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -174,10 +143,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'forceRender',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -189,14 +155,11 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'getContainer',
-            'zh-CN':
-              'getContainer | 指定挂载的 HTML 节点，默认为 body，如果为 null 的话，会渲染到当前节点 '
+            'zh-CN': 'getContainer | 指定挂载的 HTML 节点，默认为 body，如果为 null 的话，会渲染到当前节点 '
           }
         },
         name: 'getContainer',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -212,9 +175,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onAction',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -230,9 +191,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClose',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -248,9 +207,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onMaskClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -266,10 +223,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'popupClassName',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -285,9 +239,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'popupStyle',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       },
       {
         title: {
@@ -303,10 +255,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'safeArea',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -322,10 +271,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -341,10 +287,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'visible',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       }
     ],
     supports: {

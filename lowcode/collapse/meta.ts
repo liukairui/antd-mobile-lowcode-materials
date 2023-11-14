@@ -31,10 +31,7 @@ const CollapseMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'accordion',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -54,19 +51,14 @@ const CollapseMeta: IPublicTypeComponentMetadata = {
           componentName: 'MixedSetter',
           props: {
             setters: [
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              },
+              'StringSetter',
               {
                 componentName: 'ArraySetter',
                 props: {
                   itemSetter: {
-                    componentName: 'StringSetter',
-                    initialValue: ''
+                    componentName: 'StringSetter'
                   }
-                },
-                initialValue: undefined
+                }
               }
             ]
           }
@@ -89,21 +81,7 @@ const CollapseMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'SlotSetter',
-                props: {
-                  mode: 'node'
-                },
-                initialValue: {
-                  type: 'JSSlot',
-                  value: []
-                }
-              },
-              {
-                componentName: 'FunctionSetter'
-              }
-            ]
+            setters: ['SlotSetter', 'FunctionSetter']
           }
         }
       },
@@ -125,19 +103,14 @@ const CollapseMeta: IPublicTypeComponentMetadata = {
           componentName: 'MixedSetter',
           props: {
             setters: [
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              },
+              'StringSetter',
               {
                 componentName: 'ArraySetter',
                 props: {
                   itemSetter: {
-                    componentName: 'StringSetter',
-                    initialValue: ''
+                    componentName: 'StringSetter'
                   }
-                },
-                initialValue: undefined
+                }
               }
             ]
           }
@@ -153,19 +126,14 @@ const CollapseMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'onChange',
-            'zh-CN':
-              'onChange | 手风琴模式：(activeKey: string | null) => void 非手风琴模式：(activeKey: string[]) => void'
+            'zh-CN': 'onChange | 手风琴模式：(activeKey: string | null) => void 非手风琴模式：(activeKey: string[]) => void'
           }
         },
         name: 'onChange',
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'FunctionSetter'
-              }
-            ]
+            setters: ['FunctionSetter']
           }
         }
       },
@@ -183,10 +151,7 @@ const CollapseMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

@@ -31,9 +31,7 @@ const CheckboxGroupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'defaultValue',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       },
       {
         title: {
@@ -49,10 +47,7 @@ const CheckboxGroupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'disabled',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -68,9 +63,7 @@ const CheckboxGroupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -86,9 +79,7 @@ const CheckboxGroupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'value',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       }
     ],
     supports: {

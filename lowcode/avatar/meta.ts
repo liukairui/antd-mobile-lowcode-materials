@@ -31,10 +31,7 @@ const AvatarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'alt',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -50,16 +47,7 @@ const AvatarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'fallback',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -122,8 +110,7 @@ const AvatarMeta: IPublicTypeComponentMetadata = {
                 value: 'scale-down'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -140,10 +127,7 @@ const AvatarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'lazy',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -159,9 +143,7 @@ const AvatarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -177,9 +159,7 @@ const AvatarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onError',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -195,9 +175,7 @@ const AvatarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onLoad',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -213,10 +191,7 @@ const AvatarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'src',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -232,10 +207,7 @@ const AvatarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

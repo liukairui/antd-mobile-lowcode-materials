@@ -31,9 +31,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'afterClose',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -49,9 +47,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'afterShow',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -67,10 +63,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'bodyClassName',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -86,9 +79,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'bodyStyle',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       },
       {
         title: {
@@ -104,10 +95,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'closeOnMaskClick',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -123,10 +111,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'destroyOnClose',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -142,10 +127,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'disableBodyScroll',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -161,10 +143,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'forceRender',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -176,14 +155,11 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'getContainer',
-            'zh-CN':
-              'getContainer | 指定挂载的 HTML 节点，默认为 body，如果为 null 的话，会渲染到当前节点 HTMLElement | () => HTMLElement'
+            'zh-CN': 'getContainer | 指定挂载的 HTML 节点，默认为 body，如果为 null 的话，会渲染到当前节点 HTMLElement | () => HTMLElement'
           }
         },
         name: 'getContainer',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -199,10 +175,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'mask',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -218,10 +191,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'maskClassName',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -237,9 +207,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'maskStyle',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       },
       {
         title: {
@@ -255,9 +223,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -273,9 +239,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClose',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -291,9 +255,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onMaskClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -309,10 +271,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'role',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -328,10 +287,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'showCloseButton',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -351,11 +307,9 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -372,10 +326,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -391,10 +342,7 @@ const CenterPopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'visible',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       }
     ],
     supports: {

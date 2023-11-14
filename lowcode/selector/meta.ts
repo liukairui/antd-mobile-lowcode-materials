@@ -31,10 +31,7 @@ const SelectorMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'columns',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -50,9 +47,7 @@ const SelectorMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'defaultValue',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       },
       {
         title: {
@@ -68,10 +63,7 @@ const SelectorMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'disabled',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -87,10 +79,7 @@ const SelectorMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'multiple',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -102,14 +91,11 @@ const SelectorMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'onChange',
-            'zh-CN':
-              'onChange | (value: SelectorValue[], extend: { items: SelectorOption[] }) => void'
+            'zh-CN': 'onChange | (value: SelectorValue[], extend: { items: SelectorOption[] }) => void'
           }
         },
         name: 'onChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -147,16 +133,7 @@ const SelectorMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'description',
-                      setter: {
-                        componentName: 'SlotSetter',
-                        props: {
-                          mode: 'node'
-                        },
-                        initialValue: {
-                          type: 'JSSlot',
-                          value: []
-                        }
-                      }
+                      setter: 'SlotSetter'
                     },
                     {
                       title: {
@@ -167,10 +144,7 @@ const SelectorMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'disabled',
-                      setter: {
-                        componentName: 'BoolSetter',
-                        initialValue: undefined
-                      }
+                      setter: 'BoolSetter'
                     },
                     {
                       title: {
@@ -186,16 +160,7 @@ const SelectorMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'label',
-                      setter: {
-                        componentName: 'SlotSetter',
-                        props: {
-                          mode: 'node'
-                        },
-                        initialValue: {
-                          type: 'JSSlot',
-                          value: []
-                        }
-                      }
+                      setter: 'SlotSetter'
                     },
                     {
                       title: {
@@ -214,26 +179,15 @@ const SelectorMeta: IPublicTypeComponentMetadata = {
                       setter: {
                         componentName: 'MixedSetter',
                         props: {
-                          setters: [
-                            {
-                              componentName: 'StringSetter',
-                              initialValue: undefined
-                            },
-                            {
-                              componentName: 'NumberSetter',
-                              initialValue: undefined
-                            }
-                          ]
+                          setters: ['StringSetter', 'NumberSetter']
                         }
                       }
                     }
                   ]
                 }
-              },
-              initialValue: {}
+              }
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -250,10 +204,7 @@ const SelectorMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'showCheckMark',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -269,10 +220,7 @@ const SelectorMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -288,9 +236,7 @@ const SelectorMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'value',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       }
     ],
     supports: {

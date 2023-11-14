@@ -31,16 +31,7 @@ const ErrorBlockMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'description',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -56,10 +47,7 @@ const ErrorBlockMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'fullPage',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -75,10 +63,7 @@ const ErrorBlockMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'image',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -133,8 +118,7 @@ const ErrorBlockMeta: IPublicTypeComponentMetadata = {
                 value: 'busy'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -151,10 +135,7 @@ const ErrorBlockMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -170,16 +151,7 @@ const ErrorBlockMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       }
     ],
     supports: {

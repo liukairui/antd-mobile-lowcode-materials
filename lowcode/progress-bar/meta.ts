@@ -31,10 +31,7 @@ const ProgressBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'percent',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -50,10 +47,7 @@ const ProgressBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'rounded',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -69,10 +63,7 @@ const ProgressBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -91,25 +82,7 @@ const ProgressBarMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'BoolSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'SlotSetter',
-                props: {
-                  mode: 'node'
-                },
-                initialValue: {
-                  type: 'JSSlot',
-                  value: []
-                }
-              },
-              {
-                componentName: 'FunctionSetter'
-              }
-            ]
+            setters: ['BoolSetter', 'SlotSetter', 'FunctionSetter']
           }
         }
       }

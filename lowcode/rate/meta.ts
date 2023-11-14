@@ -31,10 +31,7 @@ const RateMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'allowClear',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -50,10 +47,7 @@ const RateMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'allowHalf',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -69,16 +63,7 @@ const RateMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'character',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -94,10 +79,7 @@ const RateMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'count',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -113,10 +95,7 @@ const RateMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'defaultValue',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -132,9 +111,7 @@ const RateMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -150,10 +127,7 @@ const RateMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'readOnly',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -169,10 +143,7 @@ const RateMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -188,10 +159,7 @@ const RateMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'value',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

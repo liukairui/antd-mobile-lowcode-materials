@@ -31,10 +31,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'autoComplete',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -50,10 +47,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'autoFocus',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -73,10 +67,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           componentName: 'MixedSetter',
           props: {
             setters: [
-              {
-                componentName: 'BoolSetter',
-                initialValue: undefined
-              },
+              'BoolSetter',
               {
                 componentName: 'ObjectSetter',
                 props: {
@@ -96,10 +87,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
                           }
                         },
                         name: 'minRows',
-                        setter: {
-                          componentName: 'NumberSetter',
-                          initialValue: undefined
-                        }
+                        setter: 'NumberSetter'
                       },
                       {
                         title: {
@@ -115,16 +103,9 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
                           }
                         },
                         name: 'maxRows',
-                        setter: {
-                          componentName: 'NumberSetter',
-                          initialValue: undefined
-                        }
+                        setter: 'NumberSetter'
                       }
-                    ],
-                    extraSetter: {
-                      componentName: 'MixedSetter',
-                      props: {}
-                    }
+                    ]
                   }
                 }
               }
@@ -146,10 +127,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'defaultValue',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -165,10 +143,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'disabled',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -184,10 +159,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'id',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -203,10 +175,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'maxLength',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -222,10 +191,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'name',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -241,9 +207,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onBlur',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -259,9 +223,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -277,9 +239,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -295,9 +255,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onCompositionEnd',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -309,14 +267,11 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'onCompositionStart',
-            'zh-CN':
-              'onCompositionStart | (this: GlobalEventHandlers, ev: CompositionEvent) => void'
+            'zh-CN': 'onCompositionStart | (this: GlobalEventHandlers, ev: CompositionEvent) => void'
           }
         },
         name: 'onCompositionStart',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -332,9 +287,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onFocus',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -350,10 +303,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'placeholder',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -369,10 +319,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'readOnly',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -388,10 +335,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'rows',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -410,15 +354,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'BoolSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'FunctionSetter'
-              }
-            ]
+            setters: ['BoolSetter', 'FunctionSetter']
           }
         }
       },
@@ -436,10 +372,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -455,10 +388,7 @@ const TextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'value',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       }
     ],
     supports: {

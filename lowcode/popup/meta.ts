@@ -35,9 +35,7 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'afterClose',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -53,9 +51,7 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'afterShow',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -71,10 +67,7 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'bodyClassName',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -90,9 +83,7 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'bodyStyle',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       },
       {
         title: {
@@ -108,10 +99,7 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'closeOnMaskClick',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -127,10 +115,7 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'destroyOnClose',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -146,10 +131,7 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'disableBodyScroll',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -165,10 +147,7 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'forceRender',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -180,14 +159,11 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'getContainer',
-            'zh-CN':
-              'getContainer | 指定挂载的 HTML 节点，默认为 body，如果为 null 的话，会渲染到当前节点 HTMLElement | () => HTMLElement'
+            'zh-CN': 'getContainer | 指定挂载的 HTML 节点，默认为 body，如果为 null 的话，会渲染到当前节点 HTMLElement | () => HTMLElement'
           }
         },
         name: 'getContainer',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -203,10 +179,7 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'mask',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -222,10 +195,7 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'maskClassName',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -241,9 +211,7 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'maskStyle',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       },
       {
         title: {
@@ -259,9 +227,7 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -277,9 +243,7 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClose',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -291,14 +255,11 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'onMaskClick',
-            'zh-CN':
-              'onMaskClick | (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void'
+            'zh-CN': 'onMaskClick | (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void'
           }
         },
         name: 'onMaskClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -353,8 +314,7 @@ const PopupMeta: IPublicTypeComponentMetadata = {
                 value: 'bottom'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -371,10 +331,7 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'showCloseButton',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -394,11 +351,9 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -415,10 +370,7 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -434,10 +386,7 @@ const PopupMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'visible',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       }
     ],
     supports: {

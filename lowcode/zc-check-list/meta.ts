@@ -54,10 +54,7 @@ const ZcCheckListMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'description',
-                      setter: {
-                        componentName: 'StringSetter',
-                        initialValue: undefined
-                      }
+                      setter: 'StringSetter'
                     },
                     {
                       title: {
@@ -73,10 +70,7 @@ const ZcCheckListMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'disabled',
-                      setter: {
-                        componentName: 'BoolSetter',
-                        initialValue: undefined
-                      }
+                      setter: 'BoolSetter'
                     },
                     {
                       title: {
@@ -92,10 +86,7 @@ const ZcCheckListMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'readOnly',
-                      setter: {
-                        componentName: 'BoolSetter',
-                        initialValue: undefined
-                      }
+                      setter: 'BoolSetter'
                     },
                     {
                       title: {
@@ -111,10 +102,7 @@ const ZcCheckListMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'content',
-                      setter: {
-                        componentName: 'StringSetter',
-                        initialValue: undefined
-                      },
+                      setter: 'StringSetter',
                       isRequired: true
                     },
                     {
@@ -131,22 +119,13 @@ const ZcCheckListMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'value',
-                      setter: {
-                        componentName: 'StringSetter',
-                        initialValue: undefined
-                      }
+                      setter: 'StringSetter'
                     }
-                  ],
-                  extraSetter: {
-                    componentName: 'MixedSetter',
-                    props: {}
-                  }
+                  ]
                 }
-              },
-              initialValue: {}
+              }
             }
-          },
-          initialValue: []
+          }
         }
       }
     ],

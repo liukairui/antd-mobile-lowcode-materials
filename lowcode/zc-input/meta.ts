@@ -32,10 +32,7 @@ const ZcInputMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'placeholder',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        },
+        setter: 'StringSetter',
         extraProps: handleEmptyStringExtraProps
       },
       {
@@ -52,10 +49,7 @@ const ZcInputMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'readOnly',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       }
     ],
     supports: {

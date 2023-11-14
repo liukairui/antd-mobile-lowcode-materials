@@ -31,10 +31,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'cancelText',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -50,10 +47,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'clearOnCancel',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -69,10 +63,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'clearable',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -88,10 +79,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'defaultValue',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -107,16 +95,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'icon',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -132,10 +111,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'maxLength',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -151,9 +127,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onBlur',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -169,9 +143,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onCancel',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -187,9 +159,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -205,9 +175,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClear',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -223,9 +191,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onFocus',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -241,9 +207,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onSearch',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -259,10 +223,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onlyShowClearWhenFocus',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -278,10 +239,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'placeholder',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -300,15 +258,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: [
-              {
-                componentName: 'BoolSetter',
-                initialValue: undefined
-              },
-              {
-                componentName: 'FunctionSetter'
-              }
-            ]
+            setters: ['BoolSetter', 'FunctionSetter']
           }
         }
       },
@@ -326,10 +276,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -345,10 +292,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'value',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       }
     ],
     supports: {

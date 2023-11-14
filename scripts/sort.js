@@ -12,8 +12,7 @@ subFolders.forEach((subFolder) => {
     const metaPath = path.join(subFolderPath, 'meta.ts');
     try {
       const fileContent = fs.readFileSync(metaPath, 'utf-8');
-      const regex =
-        /IPublicTypeComponentMetadata\s*=\s*{([\s\S]*?)};[\s\S]*const\s+snippets:\s*IPublicTypeSnippet\[\]\s*=\s*\[([\s\S]*?)]/;
+      const regex = /IPublicTypeComponentMetadata\s*=\s*{([\s\S]*?)};[\s\S]*const\s+snippets:\s*IPublicTypeSnippet\[\]\s*=\s*\[([\s\S]*?)]/;
       const matches = fileContent.match(regex);
       if (matches) {
         const createObject = new Function(`return {${matches[1]}}`);

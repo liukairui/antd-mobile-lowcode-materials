@@ -31,10 +31,7 @@ const NoticeBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'closeable',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -89,8 +86,7 @@ const NoticeBarMeta: IPublicTypeComponentMetadata = {
                 value: 'error'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -107,16 +103,7 @@ const NoticeBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'content',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -132,10 +119,7 @@ const NoticeBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'delay',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -151,16 +135,7 @@ const NoticeBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'extra',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -176,16 +151,7 @@ const NoticeBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'icon',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -201,9 +167,7 @@ const NoticeBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClose',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -219,10 +183,7 @@ const NoticeBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'speed',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -238,10 +199,7 @@ const NoticeBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -257,10 +215,7 @@ const NoticeBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'wrap',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       }
     ],
     supports: {

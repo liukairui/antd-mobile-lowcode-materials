@@ -31,10 +31,7 @@ const ProgressCircleMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'percent',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -50,10 +47,7 @@ const ProgressCircleMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

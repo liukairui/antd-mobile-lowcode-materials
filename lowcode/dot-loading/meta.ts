@@ -66,13 +66,9 @@ const DotLoadingMeta: IPublicTypeComponentMetadata = {
                       value: 'white'
                     }
                   ]
-                },
-                initialValue: undefined
+                }
               },
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              }
+              'StringSetter'
             ]
           }
         }
@@ -91,10 +87,7 @@ const DotLoadingMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

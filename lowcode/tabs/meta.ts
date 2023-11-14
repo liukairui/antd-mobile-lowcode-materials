@@ -31,10 +31,7 @@ const TabsMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'activeKey',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -81,8 +78,7 @@ const TabsMeta: IPublicTypeComponentMetadata = {
                 value: 'fixed'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -99,10 +95,7 @@ const TabsMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'defaultActiveKey',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -118,9 +111,7 @@ const TabsMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -136,10 +127,7 @@ const TabsMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'stretch',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -155,10 +143,7 @@ const TabsMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

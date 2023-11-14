@@ -31,10 +31,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'disabled',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -50,16 +47,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'footer',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -74,10 +62,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
             'zh-CN': 'form | 经 Form.useForm() 创建的 form 控制实例，不提供时会自动创建'
           }
         },
-        name: 'form',
-        setter: {
-          componentName: 'VariableSetter'
-        }
+        name: 'form'
       },
       {
         title: {
@@ -93,10 +78,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'hasFeedback',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -112,9 +94,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'initialValues',
-        setter: {
-          componentName: 'JsonSetter'
-        }
+        setter: 'JsonSetter'
       },
       {
         title: {
@@ -153,8 +133,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                 value: 'vertical'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -194,8 +173,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                 value: 'card'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -212,10 +190,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'name',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -231,9 +206,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onFieldsChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -249,9 +222,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onFinish',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -267,9 +238,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onFinishFailed',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -285,9 +254,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onValuesChange',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -303,10 +270,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'preserve',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -361,8 +325,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                 value: 'text-optional'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -379,10 +342,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -398,6 +358,10 @@ const FormMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'validateMessages',
+        extraProps: {
+          display: 'accordion',
+          defaultCollapsed: true
+        },
         setter: {
           componentName: 'ObjectSetter',
           props: {
@@ -415,15 +379,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                   setter: {
                     componentName: 'MixedSetter',
                     props: {
-                      setters: [
-                        {
-                          componentName: 'StringSetter',
-                          initialValue: undefined
-                        },
-                        {
-                          componentName: 'FunctionSetter'
-                        }
-                      ]
+                      setters: ['StringSetter', 'FunctionSetter']
                     }
                   }
                 },
@@ -439,15 +395,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                   setter: {
                     componentName: 'MixedSetter',
                     props: {
-                      setters: [
-                        {
-                          componentName: 'StringSetter',
-                          initialValue: undefined
-                        },
-                        {
-                          componentName: 'FunctionSetter'
-                        }
-                      ]
+                      setters: ['StringSetter', 'FunctionSetter']
                     }
                   }
                 },
@@ -463,15 +411,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                   setter: {
                     componentName: 'MixedSetter',
                     props: {
-                      setters: [
-                        {
-                          componentName: 'StringSetter',
-                          initialValue: undefined
-                        },
-                        {
-                          componentName: 'FunctionSetter'
-                        }
-                      ]
+                      setters: ['StringSetter', 'FunctionSetter']
                     }
                   }
                 },
@@ -487,15 +427,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                   setter: {
                     componentName: 'MixedSetter',
                     props: {
-                      setters: [
-                        {
-                          componentName: 'StringSetter',
-                          initialValue: undefined
-                        },
-                        {
-                          componentName: 'FunctionSetter'
-                        }
-                      ]
+                      setters: ['StringSetter', 'FunctionSetter']
                     }
                   }
                 },
@@ -525,15 +457,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -549,15 +473,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -573,23 +489,11 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           }
-                        ],
-                        extraSetter: {
-                          componentName: 'MixedSetter',
-                          props: {}
-                        }
+                        ]
                       }
                     }
                   }
@@ -620,15 +524,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -644,15 +540,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -668,15 +556,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -692,15 +572,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -716,15 +588,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -740,15 +604,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -764,15 +620,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -788,15 +636,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -812,15 +652,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -836,15 +668,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -860,15 +684,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -884,15 +700,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -908,23 +716,11 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           }
-                        ],
-                        extraSetter: {
-                          componentName: 'MixedSetter',
-                          props: {}
-                        }
+                        ]
                       }
                     }
                   }
@@ -955,15 +751,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -979,15 +767,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -1003,15 +783,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -1027,23 +799,11 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           }
-                        ],
-                        extraSetter: {
-                          componentName: 'MixedSetter',
-                          props: {}
-                        }
+                        ]
                       }
                     }
                   }
@@ -1074,15 +834,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -1098,15 +850,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -1122,15 +866,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -1146,23 +882,11 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           }
-                        ],
-                        extraSetter: {
-                          componentName: 'MixedSetter',
-                          props: {}
-                        }
+                        ]
                       }
                     }
                   }
@@ -1193,15 +917,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -1217,15 +933,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -1241,15 +949,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           },
@@ -1265,23 +965,11 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           }
-                        ],
-                        extraSetter: {
-                          componentName: 'MixedSetter',
-                          props: {}
-                        }
+                        ]
                       }
                     }
                   }
@@ -1312,32 +1000,16 @@ const FormMeta: IPublicTypeComponentMetadata = {
                             setter: {
                               componentName: 'MixedSetter',
                               props: {
-                                setters: [
-                                  {
-                                    componentName: 'StringSetter',
-                                    initialValue: undefined
-                                  },
-                                  {
-                                    componentName: 'FunctionSetter'
-                                  }
-                                ]
+                                setters: ['StringSetter', 'FunctionSetter']
                               }
                             }
                           }
-                        ],
-                        extraSetter: {
-                          componentName: 'MixedSetter',
-                          props: {}
-                        }
+                        ]
                       }
                     }
                   }
                 }
-              ],
-              extraSetter: {
-                componentName: 'MixedSetter',
-                props: {}
-              }
+              ]
             }
           }
         }
@@ -1360,19 +1032,14 @@ const FormMeta: IPublicTypeComponentMetadata = {
           componentName: 'MixedSetter',
           props: {
             setters: [
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              },
+              'StringSetter',
               {
                 componentName: 'ArraySetter',
                 props: {
                   itemSetter: {
-                    componentName: 'StringSetter',
-                    initialValue: ''
+                    componentName: 'StringSetter'
                   }
-                },
-                initialValue: undefined
+                }
               }
             ]
           }

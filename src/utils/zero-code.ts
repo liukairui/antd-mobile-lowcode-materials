@@ -22,10 +22,7 @@ export const zcFieldProps: IPublicTypeFieldConfig[] = [
       }
     },
     name: 'label',
-    setter: {
-      componentName: 'StringSetter',
-      initialValue: undefined
-    },
+    setter: 'StringSetter',
     extraProps: {
       setValue: (target, value) => {
         const name = pinyin(value, { style: pinyin.STYLE_NORMAL }).join('');
@@ -47,10 +44,7 @@ export const zcFieldProps: IPublicTypeFieldConfig[] = [
       }
     },
     name: 'name',
-    setter: {
-      componentName: 'StringSetter',
-      initialValue: undefined
-    }
+    setter: 'StringSetter'
   },
 
   {
@@ -67,10 +61,7 @@ export const zcFieldProps: IPublicTypeFieldConfig[] = [
       }
     },
     name: 'required',
-    setter: {
-      componentName: 'BoolSetter',
-      initialValue: undefined
-    }
+    setter: 'BoolSetter'
   },
   {
     title: {
@@ -86,9 +77,6 @@ export const zcFieldProps: IPublicTypeFieldConfig[] = [
       }
     },
     name: 'disabled',
-    setter: {
-      componentName: 'BoolSetter',
-      initialValue: undefined
-    }
+    setter: 'BoolSetter'
   }
 ];

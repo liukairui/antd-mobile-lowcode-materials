@@ -4,8 +4,7 @@ import { join } from 'path';
 
 const { version } = JSON.parse(fs.readFileSync(join(__dirname, '../package.json'), 'utf8'));
 
-const productStyles =
-  '.__dumi-default-menu{display:none} .__dumi-default-layout{padding-left:58px!important}';
+const productStyles = '.__dumi-default-menu{display:none} .__dumi-default-layout{padding-left:58px!important}';
 
 const productPath = `/antd-mobile-lowcode-materials@${version}/build/docs/`;
 
@@ -46,10 +45,7 @@ export default defineConfig({
       if (prop.declarations !== undefined && prop.declarations.length > 0) {
         const hasPropAdditionalDescription = prop.declarations.find((declaration) => {
           if (declaration.fileName.includes('node_modules')) {
-            return (
-              declaration.fileName.includes('alifd/next') ||
-              declaration.fileName.includes('bizcharts')
-            );
+            return declaration.fileName.includes('alifd/next') || declaration.fileName.includes('bizcharts');
           }
           return true;
         });

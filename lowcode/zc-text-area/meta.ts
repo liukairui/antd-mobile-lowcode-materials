@@ -32,10 +32,7 @@ const ZcTextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'maxLength',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -51,10 +48,7 @@ const ZcTextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'placeholder',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        },
+        setter: 'StringSetter',
         extraProps: handleEmptyStringExtraProps
       },
       {
@@ -71,10 +65,7 @@ const ZcTextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'readOnly',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -90,10 +81,7 @@ const ZcTextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'showCount',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       }
     ],
     supports: {

@@ -31,10 +31,7 @@ const SkeletonParagraphMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'animated',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -50,10 +47,7 @@ const SkeletonParagraphMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'lineCount',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -69,10 +63,7 @@ const SkeletonParagraphMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

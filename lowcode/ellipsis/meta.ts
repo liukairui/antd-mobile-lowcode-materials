@@ -31,10 +31,7 @@ const EllipsisMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'collapseText',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -50,10 +47,7 @@ const EllipsisMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'content',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -69,10 +63,7 @@ const EllipsisMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'defaultExpanded',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -119,8 +110,7 @@ const EllipsisMeta: IPublicTypeComponentMetadata = {
                 value: 'end'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -137,10 +127,7 @@ const EllipsisMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'expandText',
-        setter: {
-          componentName: 'StringSetter',
-          initialValue: undefined
-        }
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -156,9 +143,7 @@ const EllipsisMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onContentClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -174,10 +159,7 @@ const EllipsisMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'rows',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -197,11 +179,9 @@ const EllipsisMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -218,10 +198,7 @@ const EllipsisMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

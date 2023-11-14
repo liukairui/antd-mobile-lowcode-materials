@@ -31,9 +31,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'afterClose',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -49,9 +47,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'afterShow',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -67,16 +63,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'cancelText',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -92,10 +79,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'closeOnMaskClick',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -111,16 +95,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'confirmText',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -135,10 +110,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
             'zh-CN': 'defaultValue'
           }
         },
-        name: 'defaultValue',
-        setter: {
-          componentName: 'VariableSetter'
-        }
+        name: 'defaultValue'
       },
       {
         title: {
@@ -154,10 +126,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'destroyOnClose',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -172,10 +141,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
             'zh-CN': 'filter | Record<Precision, (val: number, extend: {date: Date}) => boolean>'
           }
         },
-        name: 'filter',
-        setter: {
-          componentName: 'VariableSetter'
-        }
+        name: 'filter'
       },
       {
         title: {
@@ -191,10 +157,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'forceRender',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -206,14 +169,11 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'getContainer',
-            'zh-CN':
-              'getContainer | 指定挂载的 HTML 节点，默认为 body，如果为 null 的话，会渲染到当前节点 HTMLElement | () => HTMLElement'
+            'zh-CN': 'getContainer | 指定挂载的 HTML 节点，默认为 body，如果为 null 的话，会渲染到当前节点 HTMLElement | () => HTMLElement'
           }
         },
         name: 'getContainer',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -229,10 +189,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loading',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -248,16 +205,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loadingContent',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -272,10 +220,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
             'zh-CN': 'max'
           }
         },
-        name: 'max',
-        setter: {
-          componentName: 'VariableSetter'
-        }
+        name: 'max'
       },
       {
         title: {
@@ -290,10 +235,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
             'zh-CN': 'min'
           }
         },
-        name: 'min',
-        setter: {
-          componentName: 'VariableSetter'
-        }
+        name: 'min'
       },
       {
         title: {
@@ -309,10 +251,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'mouseWheel',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -328,9 +267,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onCancel',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -346,9 +283,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -364,9 +299,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClose',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -382,9 +315,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onConfirm',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -400,9 +331,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onSelect',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -489,8 +418,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
                 value: 'week-day'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -498,7 +426,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           label: {
             type: 'i18n',
             'en-US': 'render',
-            'zh-CN': '子元素渲染函数'
+            'zh-CN': '渲染区域'
           },
           tip: {
             type: 'i18n',
@@ -508,7 +436,19 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
         },
         name: 'render',
         setter: {
-          componentName: 'FunctionSetter'
+          componentName: 'MixedSetter',
+          props: {
+            setters: [
+              {
+                componentName: 'SlotSetter',
+                initialValue: {
+                  type: 'JSSlot',
+                  params: ['value', 'actions']
+                }
+              },
+              'FunctionSetter'
+            ]
+          }
         }
       },
       {
@@ -525,9 +465,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'renderLabel',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -547,11 +485,9 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           componentName: 'ArraySetter',
           props: {
             itemSetter: {
-              componentName: 'StringSetter',
-              initialValue: ''
+              componentName: 'StringSetter'
             }
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -568,10 +504,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -587,10 +520,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tillNow',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -606,16 +536,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -630,10 +551,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
             'zh-CN': 'value'
           }
         },
-        name: 'value',
-        setter: {
-          componentName: 'VariableSetter'
-        }
+        name: 'value'
       },
       {
         title: {
@@ -649,10 +567,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'visible',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       }
     ],
     supports: {

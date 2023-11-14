@@ -31,16 +31,7 @@ const PullToRefreshMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'canReleaseText',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -56,10 +47,7 @@ const PullToRefreshMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'completeDelay',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -75,16 +63,7 @@ const PullToRefreshMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'completeText',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -100,10 +79,7 @@ const PullToRefreshMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'disabled',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -119,10 +95,7 @@ const PullToRefreshMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'headHeight',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       },
       {
         title: {
@@ -138,9 +111,7 @@ const PullToRefreshMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onRefresh',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -156,16 +127,7 @@ const PullToRefreshMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'pullingText',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -181,16 +143,7 @@ const PullToRefreshMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'refreshingText',
-        setter: {
-          componentName: 'SlotSetter',
-          props: {
-            mode: 'node'
-          },
-          initialValue: {
-            type: 'JSSlot',
-            value: []
-          }
-        }
+        setter: 'SlotSetter'
       },
       {
         title: {
@@ -202,14 +155,11 @@ const PullToRefreshMeta: IPublicTypeComponentMetadata = {
           tip: {
             type: 'i18n',
             'en-US': 'renderText',
-            'zh-CN':
-              'renderText | 根据下拉状态，自定义下拉提示文案 | (status: PullStatus) => ReactNode'
+            'zh-CN': 'renderText | 根据下拉状态，自定义下拉提示文案 | (status: PullStatus) => ReactNode'
           }
         },
         name: 'renderText',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -225,10 +175,7 @@ const PullToRefreshMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'threshold',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {

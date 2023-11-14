@@ -82,13 +82,9 @@ const TagMeta: IPublicTypeComponentMetadata = {
                       value: 'danger'
                     }
                   ]
-                },
-                initialValue: undefined
+                }
               },
-              {
-                componentName: 'StringSetter',
-                initialValue: undefined
-              }
+              'StringSetter'
             ]
           }
         }
@@ -130,8 +126,7 @@ const TagMeta: IPublicTypeComponentMetadata = {
                 value: 'outline'
               }
             ]
-          },
-          initialValue: undefined
+          }
         }
       },
       {
@@ -148,9 +143,7 @@ const TagMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'onClick',
-        setter: {
-          componentName: 'FunctionSetter'
-        }
+        setter: 'FunctionSetter'
       },
       {
         title: {
@@ -166,10 +159,7 @@ const TagMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'round',
-        setter: {
-          componentName: 'BoolSetter',
-          initialValue: undefined
-        }
+        setter: 'BoolSetter'
       },
       {
         title: {
@@ -185,10 +175,7 @@ const TagMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'tabIndex',
-        setter: {
-          componentName: 'NumberSetter',
-          initialValue: undefined
-        }
+        setter: 'NumberSetter'
       }
     ],
     supports: {
