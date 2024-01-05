@@ -551,3 +551,6 @@ export { ZcMultipleCheckList } from './components/zc-multiple-check-list';
 
 /* 日期 */
 export { ZcDatePicker } from './components/zc-date-picker';
+
+/* 开关 */
+export { ZcSwitch } from './components/zc-switch';

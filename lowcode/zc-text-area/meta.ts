@@ -1,9 +1,9 @@
 import { IPublicTypeComponentMetadata, IPublicTypeSnippet } from '@alilc/lowcode-types';
-import { handleEmptyStringExtraProps, zcFieldProps } from '../../src/utils/zero-code';
+import { zcFieldProps } from '../../src/utils/zero-code';
 
 const ZcTextAreaMeta: IPublicTypeComponentMetadata = {
   componentName: 'ZcTextArea',
-  title: '多行输入框',
+  title: '零代码-多行输入框',
   group: '零代码组件',
   docUrl: '',
   screenshot: '',
@@ -48,8 +48,7 @@ const ZcTextAreaMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'placeholder',
-        setter: 'StringSetter',
-        extraProps: handleEmptyStringExtraProps
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -95,7 +94,7 @@ const ZcTextAreaMeta: IPublicTypeComponentMetadata = {
 };
 const snippets: IPublicTypeSnippet[] = [
   {
-    title: '多行输入框',
+    title: '零代码-多行输入框',
     screenshot: '',
     schema: {
       componentName: 'ZcTextArea',

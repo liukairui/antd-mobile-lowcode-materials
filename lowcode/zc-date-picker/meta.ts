@@ -3,7 +3,7 @@ import { zcFieldProps } from '../../src/utils/zero-code';
 
 const ZcDatePickerMeta: IPublicTypeComponentMetadata = {
   componentName: 'ZcDatePicker',
-  title: '日期',
+  title: '零代码-日期',
   group: '零代码组件',
   docUrl: '',
   screenshot: '',
@@ -70,7 +70,7 @@ const ZcDatePickerMeta: IPublicTypeComponentMetadata = {
 };
 const snippets: IPublicTypeSnippet[] = [
   {
-    title: '日期',
+    title: '零代码-日期',
     screenshot: '',
     schema: {
       componentName: 'ZcDatePicker',

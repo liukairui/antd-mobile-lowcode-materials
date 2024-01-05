@@ -1,11 +1,5 @@
-import { IPublicTypeFieldConfig, IPublicTypeFieldExtraProps } from '@alilc/lowcode-types';
+import { IPublicTypeFieldConfig } from '@alilc/lowcode-types';
 import pinyin from 'pinyin';
-
-export const handleEmptyStringExtraProps: IPublicTypeFieldExtraProps = {
-  setValue: (t, v) => {
-    t.getProps().setPropValue(t.extraProps['name'], v === '' ? undefined : v);
-  }
-};
 
 export const zcFieldProps: IPublicTypeFieldConfig[] = [
   {

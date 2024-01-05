@@ -1,9 +1,9 @@
 import { IPublicTypeComponentMetadata, IPublicTypeSnippet } from '@alilc/lowcode-types';
-import { handleEmptyStringExtraProps, zcFieldProps } from '../../src/utils/zero-code';
+import { zcFieldProps } from '../../src/utils/zero-code';
 
 const ZcInputMeta: IPublicTypeComponentMetadata = {
   componentName: 'ZcInput',
-  title: '单行输入框',
+  title: '零代码-单行输入框',
   group: '零代码组件',
   docUrl: '',
   screenshot: '',
@@ -32,8 +32,7 @@ const ZcInputMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'placeholder',
-        setter: 'StringSetter',
-        extraProps: handleEmptyStringExtraProps
+        setter: 'StringSetter'
       },
       {
         title: {
@@ -63,7 +62,7 @@ const ZcInputMeta: IPublicTypeComponentMetadata = {
 };
 const snippets: IPublicTypeSnippet[] = [
   {
-    title: '单行输入框',
+    title: '零代码-单行输入框',
     screenshot: '',
     schema: {
       componentName: 'ZcInput',

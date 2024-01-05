@@ -14,7 +14,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": false,
     "noImplicitReturns": true,
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "baseUrl": "./",
     "esModuleInterop": true,
     "experimentalDecorators": true,

@@ -1,37 +1,40 @@
 import { Form, FormItemProps, TextArea, TextAreaProps } from 'antd-mobile';
-import { FC, createElement } from 'react';
-import { ZcFieldProps } from 'src/types';
+import { Component, createElement } from 'react';
+import { IZcFieldProps } from 'src/types';
 
-interface ZcTextAreaProps {
+interface IZcTextAreaProps extends IZcFieldProps {
   maxLength?: number;
   placeholder?: string;
   readOnly?: boolean;
   showCount?: boolean;
 }
 
-const ZcTextArea: FC<ZcFieldProps & ZcTextAreaProps> = (props) => {
-  const { disabled, label, maxLength, name, placeholder, readOnly, required, showCount } = props;
+class ZcTextArea extends Component<IZcTextAreaProps> {
+  render = () => {
+    const { disabled, label, maxLength, name, placeholder, readOnly, required, showCount } = this.props;
 
-  const formItemProps: FormItemProps = {
-    disabled,
-    label,
-    messageVariables: { name: label },
-    name,
-    rules: [{ required: !!required, max: maxLength }]
-  };
+    const formItemProps: FormItemProps = {
+      disabled,
+      label,
+      messageVariables: { name: label },
+      name,
+      rules: [{ required: !!required, max: maxLength }]
+    };
 
-  const textAreaProps: TextAreaProps = {
-    autoSize: true,
-    maxLength,
-    placeholder,
-    readOnly,
-    showCount
+    const textAreaProps: TextAreaProps = {
+      autoSize: true,
+      maxLength,
+      placeholder,
+      readOnly,
+      showCount
+    };
+
+    return (
+      <Form.Item {...formItemProps}>
+        <TextArea {...textAreaProps} />
+      </Form.Item>
+    );
   };
-  return (
-    <Form.Item {...formItemProps}>
-      <TextArea {...textAreaProps} />
-    </Form.Item>
-  );
-};
+}
 
 export { ZcTextArea };

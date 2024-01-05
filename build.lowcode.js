@@ -37,7 +37,7 @@ module.exports = {
         type: 'component',
         inject: true,
         library,
-        openUrl: 'http://localhost:5556?debug&device=mobile'
+        openUrl: 'https://qiuer.net/qlc/?debug'
       }
     ]
   ]

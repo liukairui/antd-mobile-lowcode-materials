@@ -3,7 +3,7 @@ import { zcFieldProps } from '../../src/utils/zero-code';
 
 const ZcCheckListMeta: IPublicTypeComponentMetadata = {
   componentName: 'ZcCheckList',
-  title: '单选框',
+  title: '零代码-单选框',
   group: '零代码组件',
   docUrl: '',
   screenshot: '',
@@ -140,7 +140,7 @@ const ZcCheckListMeta: IPublicTypeComponentMetadata = {
 };
 const snippets: IPublicTypeSnippet[] = [
   {
-    title: '单选框',
+    title: '零代码-单选框',
     screenshot: '',
     schema: {
       componentName: 'ZcCheckList',

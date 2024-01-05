@@ -5,7 +5,7 @@ export interface ElementProps<S extends string = never> {
   style?: CSSProperties & Partial<Record<S, string>>;
 }
 
-export interface ZcFieldProps {
+export interface IZcFieldProps {
   disabled?: boolean;
   label: string;
   name?: string;
