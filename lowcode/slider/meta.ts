@@ -68,7 +68,7 @@ const SliderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'icon',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -166,7 +166,17 @@ const SliderMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: ['BoolSetter', 'FunctionSetter']
+            setters: [
+              'BoolSetter',
+              'FunctionSetter',
+              {
+                componentName: 'SlotSetter',
+                initialValue: {
+                  type: 'JSSlot',
+                  params: ['value']
+                }
+              }
+            ]
           }
         }
       },

@@ -81,7 +81,17 @@ const CollapseMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: ['SlotSetter', 'FunctionSetter']
+            setters: [
+              'StringSetter',
+              'FunctionSetter',
+              {
+                componentName: 'SlotSetter',
+                initialValue: {
+                  type: 'JSSlot',
+                  params: ['active']
+                }
+              }
+            ]
           }
         }
       },

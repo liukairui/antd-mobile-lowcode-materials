@@ -202,7 +202,7 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'text',
-                      setter: 'SlotSetter'
+                      setter: ['StringSetter', 'SlotSetter']
                     }
                   ]
                 }
@@ -396,7 +396,7 @@ const SwipeActionMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'text',
-                      setter: 'SlotSetter'
+                      setter: ['StringSetter', 'SlotSetter']
                     }
                   ]
                 }

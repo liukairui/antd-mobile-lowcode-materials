@@ -422,7 +422,7 @@ const TableMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'emptyText',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

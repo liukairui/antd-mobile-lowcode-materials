@@ -133,7 +133,7 @@ const SelectorMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'description',
-                      setter: 'SlotSetter'
+                      setter: ['StringSetter', 'SlotSetter']
                     },
                     {
                       title: {
@@ -160,7 +160,7 @@ const SelectorMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'label',
-                      setter: 'SlotSetter'
+                      setter: ['StringSetter', 'SlotSetter']
                     },
                     {
                       title: {

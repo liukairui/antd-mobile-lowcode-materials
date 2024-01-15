@@ -31,7 +31,7 @@ const JumboTabMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'description',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -111,7 +111,7 @@ const JumboTabMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       }
     ],
     supports: {

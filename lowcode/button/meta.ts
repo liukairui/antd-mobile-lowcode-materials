@@ -215,7 +215,7 @@ const ButtonMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loadingIcon',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

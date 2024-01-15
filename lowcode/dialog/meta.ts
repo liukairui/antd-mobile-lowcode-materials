@@ -170,7 +170,7 @@ const DialogMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'text',
-                      setter: 'SlotSetter'
+                      setter: ['StringSetter', 'SlotSetter']
                     }
                   ]
                 }
@@ -289,7 +289,7 @@ const DialogMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'content',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -369,7 +369,7 @@ const DialogMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'header',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -504,7 +504,7 @@ const DialogMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

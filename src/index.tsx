@@ -262,9 +262,7 @@ export class Swiper extends Component<CP<typeof _Swiper> & { items: CP<typeof _S
     const { children, items, ...props } = this.props;
     return (
       <_Swiper ref={this.ref} {...props}>
-        {items?.map((itemProps) => (
-          <_Swiper.Item {...itemProps} />
-        ))}
+        {items?.map((itemProps) => <_Swiper.Item {...itemProps} />)}
       </_Swiper>
     );
   };

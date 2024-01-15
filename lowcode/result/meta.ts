@@ -31,7 +31,7 @@ const ResultMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'description',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -47,7 +47,7 @@ const ResultMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'icon',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -143,7 +143,7 @@ const ResultMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       }
     ],
     supports: {

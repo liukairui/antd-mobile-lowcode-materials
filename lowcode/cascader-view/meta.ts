@@ -31,7 +31,7 @@ const CascaderViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'activeIcon',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

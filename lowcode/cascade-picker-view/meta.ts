@@ -70,7 +70,7 @@ const CascadePickerViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loadingContent',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -133,7 +133,16 @@ const CascadePickerViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'renderLabel',
-        setter: 'FunctionSetter'
+        setter: [
+          {
+            componentName: 'SlotSetter',
+            initialValue: {
+              type: 'JSSlot',
+              params: ['item']
+            }
+          },
+          'FunctionSetter'
+        ]
       },
       {
         title: {

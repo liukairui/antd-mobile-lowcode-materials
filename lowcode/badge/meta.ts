@@ -63,7 +63,7 @@ const BadgeMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'content',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

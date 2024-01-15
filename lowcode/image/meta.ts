@@ -159,7 +159,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'fallback',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -380,7 +380,7 @@ const ImageMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'placeholder',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

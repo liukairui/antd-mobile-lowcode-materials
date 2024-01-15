@@ -47,7 +47,7 @@ const FormMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'footer',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

@@ -31,7 +31,7 @@ const CheckListItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'description',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -79,7 +79,7 @@ const CheckListItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'prefix',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -127,7 +127,7 @@ const CheckListItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

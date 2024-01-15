@@ -81,7 +81,7 @@ const TextMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'customChildren',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

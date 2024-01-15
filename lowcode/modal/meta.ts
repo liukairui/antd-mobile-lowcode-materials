@@ -170,7 +170,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'text',
-                      setter: 'SlotSetter'
+                      setter: ['StringSetter', 'SlotSetter']
                     }
                   ]
                 }
@@ -289,7 +289,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'content',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -369,7 +369,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'header',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -520,7 +520,7 @@ const ModalMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

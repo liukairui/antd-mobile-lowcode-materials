@@ -95,7 +95,7 @@ const TabMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       }
     ],
     supports: {

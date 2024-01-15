@@ -31,7 +31,7 @@ const TabBarItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'badge',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -50,7 +50,17 @@ const TabBarItemMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: ['SlotSetter', 'FunctionSetter']
+            setters: [
+              'StringSetter',
+              'FunctionSetter',
+              {
+                componentName: 'SlotSetter',
+                initialValue: {
+                  type: 'JSSlot',
+                  params: ['active']
+                }
+              }
+            ]
           }
         }
       },
@@ -87,7 +97,17 @@ const TabBarItemMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: ['SlotSetter', 'FunctionSetter']
+            setters: [
+              'StringSetter',
+              'FunctionSetter',
+              {
+                componentName: 'SlotSetter',
+                initialValue: {
+                  type: 'JSSlot',
+                  params: ['active']
+                }
+              }
+            ]
           }
         }
       }

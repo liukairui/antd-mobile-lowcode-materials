@@ -135,7 +135,16 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'indicator',
-        setter: 'FunctionSetter'
+        setter: [
+          {
+            componentName: 'SlotSetter',
+            initialValue: {
+              type: 'JSSlot',
+              params: ['total', 'current']
+            }
+          },
+          'FunctionSetter'
+        ]
       },
       {
         title: {
@@ -189,7 +198,7 @@ const SwiperMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'children',
-                      setter: 'SlotSetter'
+                      setter: ['StringSetter', 'SlotSetter']
                     },
                     {
                       title: {

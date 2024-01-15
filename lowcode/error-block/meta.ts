@@ -31,7 +31,7 @@ const ErrorBlockMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'description',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -151,7 +151,7 @@ const ErrorBlockMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       }
     ],
     supports: {

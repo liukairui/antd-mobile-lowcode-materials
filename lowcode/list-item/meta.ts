@@ -68,7 +68,7 @@ const ListItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'description',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -100,7 +100,7 @@ const ListItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'extra',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -132,7 +132,7 @@ const ListItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'prefix',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -164,7 +164,7 @@ const ListItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       }
     ],
     supports: {

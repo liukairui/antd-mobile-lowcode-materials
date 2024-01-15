@@ -95,7 +95,7 @@ const SearchBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'icon',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

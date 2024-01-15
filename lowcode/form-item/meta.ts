@@ -131,7 +131,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'description',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -163,7 +163,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'extra',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -227,7 +227,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'help',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -280,7 +280,7 @@ const FormItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'label',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

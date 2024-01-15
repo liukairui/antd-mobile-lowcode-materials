@@ -82,7 +82,17 @@ const ProgressBarMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: ['BoolSetter', 'SlotSetter', 'FunctionSetter']
+            setters: [
+              'BoolSetter',
+              'FunctionSetter',
+              {
+                componentName: 'SlotSetter',
+                initialValue: {
+                  type: 'JSSlot',
+                  params: ['percent']
+                }
+              }
+            ]
           }
         }
       }

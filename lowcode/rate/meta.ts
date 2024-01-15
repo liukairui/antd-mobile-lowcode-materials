@@ -63,7 +63,7 @@ const RateMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'character',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

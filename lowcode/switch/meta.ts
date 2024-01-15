@@ -63,7 +63,7 @@ const SwitchMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'checkedText',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -159,7 +159,7 @@ const SwitchMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'uncheckedText',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       }
     ],
     supports: {

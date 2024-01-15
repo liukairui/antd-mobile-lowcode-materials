@@ -77,7 +77,7 @@ const DatePickerViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loadingContent',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -243,7 +243,16 @@ const DatePickerViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'renderLabel',
-        setter: 'FunctionSetter'
+        setter: [
+          {
+            componentName: 'SlotSetter',
+            initialValue: {
+              type: 'JSSlot',
+              params: ['type', 'data']
+            }
+          },
+          'FunctionSetter'
+        ]
       },
       {
         title: {

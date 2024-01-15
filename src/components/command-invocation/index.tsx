@@ -1,14 +1,5 @@
-import {
-  ActionSheet,
-  CascadePicker,
-  DatePicker,
-  Dialog,
-  ImageViewer,
-  Modal,
-  Picker,
-  Toast
-} from 'antd-mobile';
-import React, { Fragment, createElement } from 'react';
+import { ActionSheet, CascadePicker, DatePicker, Dialog, ImageViewer, Modal, Picker, Toast } from 'antd-mobile';
+import React, { Fragment } from 'react';
 
 class CommandInvocation extends React.Component {
   ActionSheet = ActionSheet;

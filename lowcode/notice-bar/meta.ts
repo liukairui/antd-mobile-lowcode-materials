@@ -103,7 +103,7 @@ const NoticeBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'content',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -135,7 +135,7 @@ const NoticeBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'extra',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -151,7 +151,7 @@ const NoticeBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'icon',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

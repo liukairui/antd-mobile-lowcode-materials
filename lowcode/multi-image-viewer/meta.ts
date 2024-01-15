@@ -174,7 +174,16 @@ const MultiImageViewerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'renderFooter',
-        setter: 'FunctionSetter'
+        setter: [
+          {
+            componentName: 'SlotSetter',
+            initialValue: {
+              type: 'JSSlot',
+              params: ['image', 'index']
+            }
+          },
+          'FunctionSetter'
+        ]
       },
       {
         title: {

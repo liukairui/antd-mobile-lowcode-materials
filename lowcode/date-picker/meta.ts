@@ -63,7 +63,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'cancelText',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -95,7 +95,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'confirmText',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -205,7 +205,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loadingContent',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -465,7 +465,16 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'renderLabel',
-        setter: 'FunctionSetter'
+        setter: [
+          {
+            componentName: 'SlotSetter',
+            initialValue: {
+              type: 'JSSlot',
+              params: ['type', 'data']
+            }
+          },
+          'FunctionSetter'
+        ]
       },
       {
         title: {
@@ -536,7 +545,7 @@ const DatePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

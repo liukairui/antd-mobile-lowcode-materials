@@ -63,7 +63,7 @@ const CardMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'extra',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -175,7 +175,7 @@ const CardMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       }
     ],
     supports: {

@@ -135,7 +135,16 @@ const ImageViewerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'renderFooter',
-        setter: 'FunctionSetter'
+        setter: [
+          {
+            componentName: 'SlotSetter',
+            initialValue: {
+              type: 'JSSlot',
+              params: ['image']
+            }
+          },
+          'FunctionSetter'
+        ]
       },
       {
         title: {

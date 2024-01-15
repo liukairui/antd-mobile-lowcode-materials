@@ -31,7 +31,7 @@ const PullToRefreshMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'canReleaseText',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -63,7 +63,7 @@ const PullToRefreshMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'completeText',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -127,7 +127,7 @@ const PullToRefreshMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'pullingText',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -143,7 +143,7 @@ const PullToRefreshMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'refreshingText',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -159,7 +159,16 @@ const PullToRefreshMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'renderText',
-        setter: 'FunctionSetter'
+        setter: [
+          {
+            componentName: 'SlotSetter',
+            initialValue: {
+              type: 'JSSlot',
+              params: ['status']
+            }
+          },
+          'FunctionSetter'
+        ]
       },
       {
         title: {

@@ -31,7 +31,7 @@ const PopoverMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'content',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

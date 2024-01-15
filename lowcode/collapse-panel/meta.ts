@@ -34,7 +34,17 @@ const CollapsePanelMeta: IPublicTypeComponentMetadata = {
         setter: {
           componentName: 'MixedSetter',
           props: {
-            setters: ['SlotSetter', 'FunctionSetter']
+            setters: [
+              'StringSetter',
+              'FunctionSetter',
+              {
+                componentName: 'SlotSetter',
+                initialValue: {
+                  type: 'JSSlot',
+                  params: ['active']
+                }
+              }
+            ]
           }
         }
       },
@@ -132,7 +142,7 @@ const CollapsePanelMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       }
     ],
     supports: {

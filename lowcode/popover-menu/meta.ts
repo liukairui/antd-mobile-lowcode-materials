@@ -106,7 +106,7 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'icon',
-                      setter: 'SlotSetter'
+                      setter: ['StringSetter', 'SlotSetter']
                     },
                     {
                       title: {
@@ -122,7 +122,7 @@ const PopoverMenuMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'text',
-                      setter: 'SlotSetter'
+                      setter: ['StringSetter', 'SlotSetter']
                     }
                   ]
                 }

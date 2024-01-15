@@ -63,7 +63,7 @@ const CascadePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'cancelText',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -95,7 +95,7 @@ const CascadePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'confirmText',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -198,7 +198,7 @@ const CascadePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loadingContent',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -387,7 +387,16 @@ const CascadePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'renderLabel',
-        setter: 'FunctionSetter'
+        setter: [
+          {
+            componentName: 'SlotSetter',
+            initialValue: {
+              type: 'JSSlot',
+              params: ['item']
+            }
+          },
+          'FunctionSetter'
+        ]
       },
       {
         title: {
@@ -442,7 +451,7 @@ const CascadePickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

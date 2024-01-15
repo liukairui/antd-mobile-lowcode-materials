@@ -53,7 +53,7 @@ const FooterMeta: IPublicTypeComponentMetadata = {
                         }
                       },
                       name: 'text',
-                      setter: 'SlotSetter'
+                      setter: ['StringSetter', 'SlotSetter']
                     },
                     {
                       title: {
@@ -116,7 +116,7 @@ const FooterMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'content',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -132,7 +132,7 @@ const FooterMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'label',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

@@ -47,7 +47,7 @@ const AvatarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'fallback',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

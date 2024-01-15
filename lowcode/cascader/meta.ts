@@ -31,7 +31,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'activeIcon',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -79,7 +79,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'cancelText',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -95,7 +95,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'confirmText',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -378,7 +378,7 @@ const CascaderMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

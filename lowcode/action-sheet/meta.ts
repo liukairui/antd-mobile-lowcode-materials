@@ -63,7 +63,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'cancelText',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -127,7 +127,7 @@ const ActionSheetMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'extra',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

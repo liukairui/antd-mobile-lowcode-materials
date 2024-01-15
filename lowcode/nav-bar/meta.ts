@@ -31,7 +31,7 @@ const NavBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'back',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -68,7 +68,7 @@ const NavBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'left',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -100,7 +100,7 @@ const NavBarMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'right',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

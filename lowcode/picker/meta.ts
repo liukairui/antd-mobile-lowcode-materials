@@ -63,7 +63,7 @@ const PickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'cancelText',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -124,7 +124,7 @@ const PickerMeta: IPublicTypeComponentMetadata = {
                                   }
                                 },
                                 name: 'label',
-                                setter: 'SlotSetter'
+                                setter: ['StringSetter', 'SlotSetter']
                               },
                               {
                                 title: {
@@ -190,7 +190,7 @@ const PickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'confirmText',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -293,7 +293,7 @@ const PickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loadingContent',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -467,7 +467,16 @@ const PickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'renderLabel',
-        setter: 'FunctionSetter'
+        setter: [
+          {
+            componentName: 'SlotSetter',
+            initialValue: {
+              type: 'JSSlot',
+              params: ['item']
+            }
+          },
+          'FunctionSetter'
+        ]
       },
       {
         title: {
@@ -522,7 +531,7 @@ const PickerMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {

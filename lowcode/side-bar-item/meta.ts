@@ -31,7 +31,7 @@ const SideBarItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'badge',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -79,7 +79,7 @@ const SideBarItemMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       }
     ],
     supports: {

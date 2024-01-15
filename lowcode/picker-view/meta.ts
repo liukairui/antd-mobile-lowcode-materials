@@ -60,7 +60,7 @@ const PickerViewMeta: IPublicTypeComponentMetadata = {
                                   }
                                 },
                                 name: 'label',
-                                setter: 'SlotSetter'
+                                setter: ['StringSetter', 'SlotSetter']
                               },
                               {
                                 title: {
@@ -165,7 +165,7 @@ const PickerViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'loadingContent',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -213,7 +213,16 @@ const PickerViewMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'renderLabel',
-        setter: 'FunctionSetter'
+        setter: [
+          {
+            componentName: 'SlotSetter',
+            initialValue: {
+              type: 'JSSlot',
+              params: ['item']
+            }
+          },
+          'FunctionSetter'
+        ]
       },
       {
         title: {

@@ -31,7 +31,7 @@ const IndexBarPanelMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'brief',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
@@ -79,7 +79,7 @@ const IndexBarPanelMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'title',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       }
     ],
     supports: {

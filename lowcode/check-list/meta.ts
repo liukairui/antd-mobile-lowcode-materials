@@ -31,7 +31,7 @@ const CheckListMeta: IPublicTypeComponentMetadata = {
           }
         },
         name: 'activeIcon',
-        setter: 'SlotSetter'
+        setter: ['StringSetter', 'SlotSetter']
       },
       {
         title: {
